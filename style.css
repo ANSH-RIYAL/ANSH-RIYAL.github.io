@@ -1,4 +1,5 @@
-/* Reset styles */
+/* Add or update styles as needed */
+/* Common styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +9,9 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f5f5f5;
-    padding: 20px;
+    background-color: #222;
+    color: #eee;
+    margin-bottom: 20vh; /* Add extra space equal to 20% of the viewport height at the bottom */
 }
 
 header {
@@ -17,9 +19,27 @@ header {
     margin-bottom: 20px;
 }
 
+.profile-picture {
+    width: 150px; /* Adjust size of profile picture */
+    margin: 0 auto;
+}
+
+.profile-picture img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.header-content {
+    margin-top: 10px;
+}
+
 header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    background-color: #333; /* Add background color */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 10px; /* Add border radius */
+    color: #eee; /* Set title color */
 }
 
 header p {
@@ -27,40 +47,94 @@ header p {
     margin-bottom: 5px;
 }
 
-nav ul {
-    list-style-type: none;
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+.section-box {
+    background-color: #333; /* Darker background color */
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
+.section-box:hover {
+    background-color: #444; /* Slightly lighter background color on hover */
 }
 
-section {
-    margin-bottom: 30px;
-}
-
-section h2 {
-    font-size: 1.8em;
+.section-box h2 {
+    font-size: 1.5em;
+    font-weight: bold;
     margin-bottom: 10px;
+    color: #eee; /* Set title color */
 }
 
-.education-item {
-    margin-bottom: 20px;
+.section-box p {
+    font-size: 1.1em;
+    color: #eee; /* Set paragraph text color */
 }
 
-.date {
-    font-style: italic;
-    margin-bottom: 5px;
-}
-
-footer {
+.footer {
     text-align: center;
     margin-top: 30px;
     font-style: italic;
+    position: fixed; /* Make footer fixed */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Add background color */
+    padding: 10px 0; /* Add padding */
+}
+
+.footer a {
+    color: #eee; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Increase font size */
+}
+
+/* Specific styles for education.html */
+.title-container {
+    background-color: #666666; /* Dark grey background */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.title-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #eee; /* Set title color */
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 1 column */
+    gap: 20px;
+}
+
+.subsection {
+    background-color: #666; /* Darker grey background */
+    padding: 20px;
+    border-radius: 10px; /* Add border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subsection:hover {
+    background-color: #777; /* Slightly lighter grey background on hover */
+}
+
+.subsection h2 {
+    font-size: 1.5em; /* Smaller font size for subsection titles */
+    margin-bottom: 10px;
+    color: #eee; /* Set title color */
+}
+
+.subsection p {
+    font-size: 1em; /* Smaller font size for paragraph text */
+    margin-bottom: 10px;
+    color: #eee; /* Set paragraph text color */
 }
