@@ -10,6 +10,11 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #222;
+    background-image: url("background.jpeg"); /* background credits: https://www.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_32993994.htm#query=dark%20website%20background&position=0&from_view=keyword&track=ais&uuid=0a217920-5868-4a61-903d-ff23dde1a601 */
+    background-size: cover; /* Adjust background image size */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-attachment: fixed; /* Keep background image fixed while scrolling */
+    background-position: center; /* Center the background image */
     color: #eee;
     margin-bottom: 20vh; /* Add extra space equal to 20% of the viewport height at the bottom */
 }
@@ -47,15 +52,46 @@ header p {
     margin-bottom: 5px;
 }
 
+.navbar {
+    background-color: #333; /* Add background color */
+    padding: 10px 20px; /* Add padding */
+    text-align: center; /* Center align the navigation links */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points from the list */
+}
+
+.navbar li {
+    display: inline; /* Display navigation items horizontally */
+    margin-right: 20px; /* Add space between navigation items */
+}
+
+.navbar a {
+    color: #eee; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Increase font size */
+    transition: color 0.3s ease; /* Add transition effect for smoother color change */
+}
+
+.navbar a:hover {
+    color: #fff; /* Change link color on hover */
+}
+
 main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
     grid-gap: 20px;
     padding: 20px;
 }
 
 .section-box {
-    background-color: #333; /* Darker background color */
+    background-color: rgba(
+        51,
+        51,
+        51,
+        0.7
+    ); /* Darker background color with transparency */
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -63,7 +99,12 @@ main {
 }
 
 .section-box:hover {
-    background-color: #444; /* Slightly lighter background color on hover */
+    background-color: rgba(
+        68,
+        68,
+        68,
+        0.7
+    ); /* Slightly lighter background color on hover with transparency */
 }
 
 .section-box h2 {
@@ -75,6 +116,7 @@ main {
 
 .section-box p {
     font-size: 1.1em;
+    font-weight: bold; /* Make text font bolder */
     color: #eee; /* Set paragraph text color */
 }
 
@@ -111,12 +153,17 @@ main {
 
 .section-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* 1 column */
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
     gap: 20px;
 }
 
 .subsection {
-    background-color: #666; /* Darker grey background */
+    background-color: rgba(
+        102,
+        102,
+        102,
+        0.7
+    ); /* Darker grey background with transparency */
     padding: 20px;
     border-radius: 10px; /* Add border radius */
     cursor: pointer;
@@ -124,7 +171,12 @@ main {
 }
 
 .subsection:hover {
-    background-color: #777; /* Slightly lighter grey background on hover */
+    background-color: rgba(
+        119,
+        119,
+        119,
+        0.7
+    ); /* Slightly lighter grey background on hover with transparency */
 }
 
 .subsection h2 {
@@ -137,4 +189,8 @@ main {
     font-size: 1em; /* Smaller font size for paragraph text */
     margin-bottom: 10px;
     color: #eee; /* Set paragraph text color */
+}
+
+a {
+    text-decoration: none; /* Remove underline from hyperlinks */
 }
