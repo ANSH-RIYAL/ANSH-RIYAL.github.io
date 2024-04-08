@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #222;
-    background-image: url("background.jpeg"); /* background credits: https://www.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_32993994.htm#query=dark%20website%20background&position=0&from_view=keyword&track=ais&uuid=0a217920-5868-4a61-903d-ff23dde1a601 */
+    background-image: url("./images/background.jpeg"); /* background credits: https://www.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_32993994.htm#query=dark%20website%20background&position=0&from_view=keyword&track=ais&uuid=0a217920-5868-4a61-903d-ff23dde1a601 */
     background-size: cover; /* Adjust background image size */
     background-repeat: no-repeat; /* Prevent background image from repeating */
     background-attachment: fixed; /* Keep background image fixed while scrolling */
@@ -85,6 +85,13 @@ main {
     padding: 20px;
 }
 
+/* .section-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15pt;
+    padding: 15pt;
+} */
+
 .section-box {
     background-color: rgba(
         51,
@@ -149,12 +156,6 @@ main {
     font-size: 2.5em;
     margin-bottom: 10px;
     color: #eee; /* Set title color */
-}
-
-.section-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-    gap: 20px;
 }
 
 .subsection {
