@@ -11,3 +11,14 @@ for (var i = 0; i < links.length; i++) {
         links[i].setAttribute('target', '_blank');
     }
 }
+
+// ChatGPT interaction tool functionality
+var chatgptTool = document.createElement('div');
+chatgptTool.className = 'chatgpt-tool';
+chatgptTool.innerText = 'ChatGPT Assistant';
+
+chatgptTool.addEventListener('click', function () {
+    window.open('https://chat.openai.com', '_blank');
+});
+
+document.body.appendChild(chatgptTool);
