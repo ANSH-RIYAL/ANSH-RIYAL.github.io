@@ -10,13 +10,13 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #222;
-    background-image: url("./images/background.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-image: url("./images/background.jpeg"); /* background credits: https://www.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_32993994.htm#query=dark%20website%20background&position=0&from_view=keyword&track=ais&uuid=0a217920-5868-4a61-903d-ff23dde1a601 */
+    background-size: cover; /* Adjust background image size */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-attachment: fixed; /* Keep background image fixed while scrolling */
+    background-position: center; /* Center the background image */
     color: #eee;
-    margin-bottom: 20vh;
+    margin-bottom: 20vh; /* Add extra space equal to 20% of the viewport height at the bottom */
 }
 
 header {
@@ -25,7 +25,7 @@ header {
 }
 
 .profile-picture {
-    width: 150px;
+    width: 150px; /* Adjust size of profile picture */
     margin: 0 auto;
 }
 
@@ -41,10 +41,10 @@ header {
 header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    background-color: #333;
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: #eee;
+    background-color: #333; /* Add background color */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 10px; /* Add border radius */
+    color: #eee; /* Set title color */
 }
 
 header p {
@@ -53,40 +53,52 @@ header p {
 }
 
 .navbar {
-    background-color: #333;
-    padding: 10px 20px;
-    text-align: center;
+    background-color: #333; /* Add background color */
+    padding: 10px 20px; /* Add padding */
+    text-align: center; /* Center align the navigation links */
 }
 
 .navbar ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove bullet points from the list */
 }
 
 .navbar li {
-    display: inline;
-    margin-right: 20px;
+    display: inline; /* Display navigation items horizontally */
+    margin-right: 20px; /* Add space between navigation items */
 }
 
 .navbar a {
-    color: #eee;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
+    color: #eee; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Increase font size */
+    transition: color 0.3s ease; /* Add transition effect for smoother color change */
 }
 
 .navbar a:hover {
-    color: #fff;
+    color: #fff; /* Change link color on hover */
 }
 
 main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
     grid-gap: 20px;
     padding: 20px;
 }
 
+/* .section-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15pt;
+    padding: 15pt;
+} */
+
 .section-box {
-    background-color: rgba(51, 51, 51, 0.7);
+    background-color: rgba(
+        51,
+        51,
+        51,
+        0.7
+    ); /* Darker background color with transparency */
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -94,43 +106,48 @@ main {
 }
 
 .section-box:hover {
-    background-color: rgba(68, 68, 68, 0.7);
+    background-color: rgba(
+        68,
+        68,
+        68,
+        0.7
+    ); /* Slightly lighter background color on hover with transparency */
 }
 
 .section-box h2 {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #eee;
+    color: #eee; /* Set title color */
 }
 
 .section-box p {
     font-size: 1.1em;
-    font-weight: bold;
-    color: #eee;
+    font-weight: bold; /* Make text font bolder */
+    color: #eee; /* Set paragraph text color */
 }
 
 .footer {
     text-align: center;
     margin-top: 30px;
     font-style: italic;
-    position: fixed;
+    position: fixed; /* Make footer fixed */
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
-    padding: 10px 0;
+    background-color: #333; /* Add background color */
+    padding: 10px 0; /* Add padding */
 }
 
 .footer a {
-    color: #eee;
-    text-decoration: none;
-    font-size: 1.2em;
+    color: #eee; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Increase font size */
 }
 
 /* Specific styles for education.html */
 .title-container {
-    background-color: #666666;
+    background-color: #666666; /* Dark grey background */
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -138,50 +155,43 @@ main {
 .title-container h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    color: #eee;
+    color: #eee; /* Set title color */
 }
 
 .subsection {
-    background-color: rgba(102, 102, 102, 0.7);
+    background-color: rgba(
+        102,
+        102,
+        102,
+        0.7
+    ); /* Darker grey background with transparency */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 10px; /* Add border radius */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .subsection:hover {
-    background-color: rgba(119, 119, 119, 0.7);
+    background-color: rgba(
+        119,
+        119,
+        119,
+        0.7
+    ); /* Slightly lighter grey background on hover with transparency */
 }
 
 .subsection h2 {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Smaller font size for subsection titles */
     margin-bottom: 10px;
-    color: #eee;
+    color: #eee; /* Set title color */
 }
 
 .subsection p {
-    font-size: 1em;
+    font-size: 1em; /* Smaller font size for paragraph text */
     margin-bottom: 10px;
-    color: #eee;
+    color: #eee; /* Set paragraph text color */
 }
 
 a {
-    text-decoration: none;
-}
-
-.chatgpt-tool {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    background-color: #444;
-    color: #eee;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.chatgpt-tool:hover {
-    background-color: #555;
+    text-decoration: none; /* Remove underline from hyperlinks */
 }
