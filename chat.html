@@ -1,35 +1,579 @@
-<!-- chat.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat with GPT</title>
-    <link rel="stylesheet" href="style.css">
+    <title>AI Chat Assistant - Ansh Riyal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="chat.html">Chat with GPT</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Chat with GPT</h1>
-        <div id="chat-container">
-            <div id="chat-window"></div>
-            <input type="text" id="user-input" placeholder="Type your message...">
-            <button id="send-button">Send</button>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-brain me-2"></i>Ansh Riyal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="chat.html">AI Chat</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </main>
+    </nav>
 
-    <script src="script.js"></script>
+    <!-- Header Section -->
+    <section class="py-5 bg-primary text-white" style="margin-top: 76px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="display-4 fw-bold mb-4">
+                        <i class="fas fa-comments me-3"></i>AI Chat Assistant
+                    </h1>
+                    <p class="lead">
+                        Ask me anything about my experience, projects, or expertise in AI and Machine Learning
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Interface -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="chat-container">
+                        <div class="chat-header">
+                            <div class="d-flex align-items-center">
+                                <div class="avatar me-3">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Ansh's AI Assistant</h5>
+                                    <small class="text-muted">Powered by LLM Technology</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="status-indicator online"></div>
+                                    <small class="text-success">Online</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="chat-messages" id="chat-messages">
+                            <div class="message bot-message">
+                                <div class="message-avatar">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="message-content">
+                                    <div class="message-bubble">
+                                        <p>Hello! I'm Ansh's AI assistant. I can help you learn more about his experience, projects, and expertise in AI and Machine Learning. What would you like to know?</p>
+                                    </div>
+                                    <div class="message-time">Just now</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="suggested-questions mb-4">
+                            <h6 class="text-muted mb-3">Suggested Questions:</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <button class="btn btn-outline-primary btn-sm suggestion-btn" data-question="Tell me about Ansh's experience with LLMs">
+                                    Tell me about LLM experience
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm suggestion-btn" data-question="What are Ansh's most significant projects?">
+                                    Key projects
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm suggestion-btn" data-question="What makes Ansh suitable for AI engineering roles?">
+                                    AI engineering expertise
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm suggestion-btn" data-question="Tell me about Ansh's publications and research">
+                                    Research & publications
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="chat-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="user-input" placeholder="Type your question here..." autocomplete="off">
+                                <button class="btn btn-primary" type="button" id="send-button">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Capabilities Info -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">AI Assistant Capabilities</h2>
+                    <p class="section-subtitle">What you can ask about</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h5>Professional Experience</h5>
+                        <p>Ask about roles, achievements, and career progression in AI/ML engineering</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h5>Technical Projects</h5>
+                        <p>Learn about LLM systems, agentic AI, and production ML deployments</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h5>Technical Skills</h5>
+                        <p>Explore expertise in Python, TensorFlow, PyTorch, AWS, and more</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h5>Research & Publications</h5>
+                        <p>Discuss academic contributions and research interests</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>&copy; 2025 Ansh Riyal. All rights reserved.</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <div class="social-links">
+                        <a href="https://github.com/ANSH-RIYAL" target="_blank" class="text-white me-3">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ansh-riyal-8225061a3/" target="_blank" class="text-white me-3">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ansh.riyal@nyu.edu" class="text-white">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // AI Chat functionality
+        const chatMessages = document.getElementById('chat-messages');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+        const suggestionButtons = document.querySelectorAll('.suggestion-btn');
+
+        // Knowledge base about Ansh Riyal
+        const knowledgeBase = {
+            experience: {
+                current: "Machine Learning Engineer (Team Lead) at METY Technology since May 2024",
+                achievements: [
+                    "80% reduction in processing time and 50% decrease in latency",
+                    "Leading 3 cross-functional teams",
+                    "Developed agentic LLM-based systems for personalized health guidance",
+                    "Integrated OpenAI APIs with in-house databases"
+                ],
+                previous: "GenAI Engineer at MyEdMaster LLC (Jan 2023 - April 2024), Teaching Assistant at NYU"
+            },
+            projects: {
+                featured: [
+                    "FastMCP & FastMCP-Tool-Generator: MCP implementation with automatic tool generation",
+                    "MCP-RAG: Custom LLM backend with Anthropic's MCP for Agentic AI systems",
+                    "Law Interpreter: AI-powered legal document analysis system",
+                    "Quantum Neural Network: Research on quantum machine learning"
+                ],
+                technologies: ["Python", "TensorFlow", "PyTorch", "LLM", "AWS", "Docker"]
+            },
+            skills: {
+                programming: ["Python (Expert)", "C++", "Java", "R"],
+                ai_ml: ["TensorFlow", "PyTorch", "Hugging Face", "LLM Fine-tuning", "Prompt Engineering"],
+                cloud: ["AWS SageMaker", "EC2", "S3", "Azure", "Docker"],
+                specialties: ["Agentic AI", "Real-time ML", "Financial AI", "Document Intelligence"]
+            },
+            education: {
+                masters: "M.S. Data Science, NYU (2022-2024), GPA: 3.77/4.0",
+                bachelors: "B.E. Computer Engineering, University of Delhi (2018-2022), GPA: 8.33/10"
+            },
+            publications: [
+                "Blockchain Tree Powered Green Communication (IEEE)",
+                "Pairing Based Cryptography (Springer)",
+                "Internet of Things and Blockchain (CRC Press)",
+                "Fog Data Analytics (Springer)"
+            ]
+        };
+
+        // AI Response generator
+        function generateAIResponse(question) {
+            const lowerQuestion = question.toLowerCase();
+            
+            // Experience-related responses
+            if (lowerQuestion.includes('experience') || lowerQuestion.includes('work') || lowerQuestion.includes('job')) {
+                return `Ansh is currently a Machine Learning Engineer and Team Lead at METY Technology since May 2024. In this role, he has achieved remarkable results including an 80% reduction in processing time and 50% decrease in latency. He leads 3 cross-functional teams and develops agentic LLM-based systems for personalized health guidance. Previously, he worked as a GenAI Engineer at MyEdMaster LLC where he built adaptive learning systems tested by 50+ students.`;
+            }
+            
+            // LLM-related responses
+            if (lowerQuestion.includes('llm') || lowerQuestion.includes('language model') || lowerQuestion.includes('gpt') || lowerQuestion.includes('ai assistant')) {
+                return `Ansh has extensive experience with Large Language Models including prompt engineering, fine-tuning (PEFT, Distillation, RLHF), and LangChain. His key LLM projects include FastMCP with automatic tool generation, MCP-RAG for agentic AI systems, and developing personalized health guidance systems using structured prompts and RAG pipelines. He has also integrated OpenAI APIs with production databases for real-world applications.`;
+            }
+            
+            // Projects-related responses
+            if (lowerQuestion.includes('project') || lowerQuestion.includes('portfolio') || lowerQuestion.includes('work')) {
+                return `Ansh's most significant projects include: FastMCP & FastMCP-Tool-Generator (MCP implementation with automatic tool generation), MCP-RAG (Custom LLM backend for Agentic AI), Law Interpreter (AI-powered legal document analysis), and Quantum Neural Network research. He has also worked on financial risk modeling, achieving AUC > 0.8 with 1.2M+ company records, and various production ML systems.`;
+            }
+            
+            // Skills-related responses
+            if (lowerQuestion.includes('skill') || lowerQuestion.includes('technology') || lowerQuestion.includes('stack')) {
+                return `Ansh's technical expertise includes Python (Expert level), TensorFlow, PyTorch, Keras, and Scikit-Learn for ML/AI. He specializes in LLM technologies like prompt engineering, fine-tuning, and generative AI. His cloud expertise covers AWS (SageMaker, EC2, S3), and he has experience with production deployment using Flask, Django, and Docker. He's particularly strong in Agentic AI systems, real-time ML, and financial AI applications.`;
+            }
+            
+            // Publications/Research responses
+            if (lowerQuestion.includes('publication') || lowerQuestion.includes('research') || lowerQuestion.includes('paper')) {
+                return `Ansh has published 4 research papers including "Blockchain Tree Powered Green Communication" (IEEE), "Pairing Based Cryptography" (Springer), "Internet of Things and Blockchain" (CRC Press), and "Fog Data Analytics" (Springer). His research interests focus on Large Language Models, Agentic AI Systems, Financial Technology, and Quantum Machine Learning.`;
+            }
+            
+            // AI Engineering suitability
+            if (lowerQuestion.includes('suitable') || lowerQuestion.includes('qualified') || lowerQuestion.includes('ai engineer')) {
+                return `Ansh is exceptionally suited for AI engineering roles due to his hands-on experience with production ML systems, leadership of cross-functional teams, and proven track record of achieving 80% performance improvements. His expertise spans the full ML lifecycle from research to deployment, with specialization in LLMs, agentic AI, and real-time systems. His combination of academic background (NYU Data Science) and industry experience makes him ideal for both technical implementation and strategic AI initiatives.`;
+            }
+            
+            // Education responses
+            if (lowerQuestion.includes('education') || lowerQuestion.includes('degree') || lowerQuestion.includes('university')) {
+                return `Ansh holds a Master's in Data Science from NYU (GPA: 3.77/4.0) and a Bachelor's in Computer Engineering from University of Delhi (GPA: 8.33/10). At NYU, he focused on advanced AI coursework including Deep Learning, Natural Language Understanding, and Applied ML in Finance. He also serves as a Teaching Assistant for 450+ students in courses like Big Data and Introduction to Data Science.`;
+            }
+            
+            // Certifications
+            if (lowerQuestion.includes('certification') || lowerQuestion.includes('credential')) {
+                return `Ansh holds several professional certifications including the Bloomberg Certificate 2024 (covering investment fundamentals and portfolio management), NSE Academy's Certified Investment Analysis Pro 2021, and various data science and machine learning certifications from DeepLearning.AI and IBM. These certifications complement his technical expertise with strong financial and quantitative analysis skills.`;
+            }
+            
+            // Default response
+            return `I'd be happy to help you learn more about Ansh's background! He's an experienced AI/ML Engineer specializing in LLM systems, agentic AI, and production ML deployment. You can ask me about his experience, projects, technical skills, education, or research. What specific aspect would you like to know more about?`;
+        }
+
+        // Add message to chat
+        function addMessage(content, isBot = false) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isBot ? 'bot-message' : 'user-message'}`;
+            
+            const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            
+            messageDiv.innerHTML = `
+                <div class="message-avatar">
+                    <i class="fas fa-${isBot ? 'robot' : 'user'}"></i>
+                </div>
+                <div class="message-content">
+                    <div class="message-bubble">
+                        <p>${content}</p>
+                    </div>
+                    <div class="message-time">${currentTime}</div>
+                </div>
+            `;
+            
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Send message
+        function sendMessage() {
+            const message = userInput.value.trim();
+            if (message) {
+                addMessage(message, false);
+                userInput.value = '';
+                
+                // Show typing indicator
+                setTimeout(() => {
+                    const response = generateAIResponse(message);
+                    addMessage(response, true);
+                }, 1000);
+            }
+        }
+
+        // Event listeners
+        sendButton.addEventListener('click', sendMessage);
+        userInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        suggestionButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const question = this.dataset.question;
+                userInput.value = question;
+                sendMessage();
+            });
+        });
+
+        // Auto-focus input
+        userInput.focus();
+    </script>
+
+    <style>
+        .chat-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .status-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .status-indicator.online {
+            background: #28a745;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background: #f8f9fa;
+        }
+
+        .message {
+            display: flex;
+            margin-bottom: 20px;
+            animation: fadeInUp 0.3s ease-out;
+        }
+
+        .user-message {
+            flex-direction: row-reverse;
+        }
+
+        .message-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+
+        .bot-message .message-avatar {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+        }
+
+        .user-message .message-avatar {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .message-content {
+            max-width: 70%;
+        }
+
+        .message-bubble {
+            padding: 15px 20px;
+            border-radius: 20px;
+            margin-bottom: 5px;
+        }
+
+        .bot-message .message-bubble {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-top-left-radius: 5px;
+        }
+
+        .user-message .message-bubble {
+            background: var(--secondary-color);
+            color: white;
+            border-top-right-radius: 5px;
+        }
+
+        .message-bubble p {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .message-time {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            text-align: right;
+        }
+
+        .user-message .message-time {
+            text-align: left;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .suggested-questions {
+            padding: 0 20px;
+            background: white;
+        }
+
+        .suggestion-btn {
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .chat-input {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .chat-input .form-control {
+            border-radius: 25px;
+            padding: 12px 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        .chat-input .btn {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .capability-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .capability-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .capability-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .capability-icon i {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .capability-card h5 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .capability-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .chat-container {
+                height: 500px;
+            }
+            
+            .message-content {
+                max-width: 85%;
+            }
+            
+            .suggested-questions .d-flex {
+                flex-direction: column;
+            }
+            
+            .suggestion-btn {
+                margin-bottom: 10px;
+                text-align: left;
+            }
+        }
+    </style>
 </body>
 </html>

@@ -1,0 +1,195 @@
+{
+  "experience": [
+    {
+      "id": 1,
+      "title": "Machine Learning Engineer (Team Lead)",
+      "company": "METY Technology",
+      "location": "NYC (Remote)",
+      "duration": "May 2024 - Present",
+      "type": "Full-time",
+      "description": "Leading ML engineering initiatives for health technology platform, managing cross-functional teams and deploying production-scale AI systems.",
+      "achievements": [
+        "Engineered and refined core ML systems for prediction modeling using TensorFlow and PyTorch for deployment",
+        "Managed and streamlined production environments on AWS EC2 and SageMaker, integrating S3 storage and SQL databases",
+        "Hosted APIs with Flask and Django, resulting in minimal downtime, high throughput, and an 80% reduction in processing time and 50% decrease in latency",
+        "Developed and maintained agentic LLM-based systems for personalized health guidance using structured prompts and RAG pipelines",
+        "Integrated OpenAI APIs with in-house databases to generate summary insights for healthbot",
+        "Interpreting and synthesizing user log data to measure compliance with user plans, biological and psychological effects",
+        "Overseeing and coordinating three cross-functional teams on API management and product enhancements"
+      ],
+      "technologies": ["Python", "TensorFlow", "PyTorch", "AWS", "SageMaker", "Flask", "Django", "OpenAI API", "RAG"],
+      "highlights": [
+        "80% reduction in processing time",
+        "50% decrease in latency",
+        "Leading 3 cross-functional teams",
+        "Production-scale AI system deployment"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "GenAI Engineer",
+      "company": "MyEdMaster LLC",
+      "location": "Virginia (Remote)",
+      "duration": "Jan 2023 - April 2024",
+      "type": "Full-time",
+      "description": "Developed advanced generative AI systems for educational applications, focusing on adaptive learning and personalized student assessment.",
+      "achievements": [
+        "Engineered an agentic chatbot system for student testing, assessment and learning feedback for a 'Virtual-Adaptive-Learning-Assistant' (VALA)",
+        "Implemented RL based prompt tweaking for changing and measuring technical depth, difficulty and subject matter alignment",
+        "Customized learning plans for every user based on repetitive learning and testing patterns",
+        "VALAs were beta tested by 50 students from grades 6th through 8th in the tuition services of MyEdMaster",
+        "Platform is being tweaked to be implemented in charter schools in California and Texas (projected to be used by 600+ students in 2 years)"
+      ],
+      "technologies": ["Python", "Generative AI", "Reinforcement Learning", "NLP", "Educational AI", "Chatbot Development"],
+      "highlights": [
+        "Beta tested with 50+ students",
+        "Projected 600+ student deployment",
+        "RL-based adaptive learning",
+        "Personalized educational AI"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Teaching Staff + Grader",
+      "company": "New York University",
+      "location": "New York",
+      "duration": "Sept 2023 - Present",
+      "type": "Part-time",
+      "description": "Teaching assistant and grader for multiple graduate and undergraduate courses at NYU Center for Data Science, facilitating learning for 1,800+ students across multiple semesters.",
+      "achievements": [
+        "Developing and facilitating multiple graduate and undergraduate courses as a teaching assistant",
+        "Principles of Data Science (PODS) - 800+ students (4 semesters)",
+        "Introduction to Data Science (IDS) - 600+ students (3 semesters)",
+        "Big Data - 400+ students (2 semesters)",
+        "Mentoring students in practical applications of data science and machine learning",
+        "Grading assignments and providing detailed feedback on student projects",
+        "Conducting office hours and tutoring sessions for complex topics"
+      ],
+      "technologies": ["Python", "Data Science", "Big Data", "Teaching", "Mentoring"],
+      "highlights": [
+        "1,800+ students taught across multiple semesters",
+        "Multiple graduate/undergraduate courses",
+        "NYU Center for Data Science",
+        "Ongoing role since 2023"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Capstone Project - M&A Agreement Extraction",
+      "company": "New York University",
+      "location": "New York",
+      "duration": "Sept 2023 - Dec 2023",
+      "type": "Academic Project",
+      "description": "Impact of Multi-Modal Input for M&A Agreement Extraction - Advanced research project utilizing transformer architectures for legal document processing.",
+      "achievements": [
+        "Utilized advanced transformer architectures and fine-tuned BERT models for M&A agreement extraction",
+        "Implemented fuzzy matching algorithms and multi-modal inputs for enhanced accuracy",
+        "Constructed and automated an end-to-end data pipeline",
+        "Leveraged structured prompting templates to transform data from existing document structures into standardized format",
+        "Preserved legal structure information across multiple databases"
+      ],
+      "technologies": ["Python", "BERT", "Transformers", "Multi-modal AI", "Legal Tech", "Data Pipeline"],
+      "highlights": [
+        "Advanced transformer architectures",
+        "Multi-modal document processing",
+        "End-to-end automation",
+        "Legal document intelligence"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Research Project - Bank Loan Default Modeling",
+      "company": "New York University",
+      "location": "New York",
+      "duration": "Sept 2022 - Dec 2022",
+      "type": "Research",
+      "description": "Modeling the Probability of Bank Loan Defaults - Comprehensive research project analyzing large-scale financial data for risk assessment.",
+      "achievements": [
+        "Analyzed and processed a real-world dataset containing 1.2 million company records to predict probability of loan defaults",
+        "Achieved an AUC score greater than 0.8 along with good accuracy",
+        "Executed comprehensive data cleaning, engineered feature extraction, selection and modification",
+        "Explored various modeling approaches, ranging from xgboost, gbm, etc. to Neural Networks",
+        "Developed production-ready risk assessment model"
+      ],
+      "technologies": ["Python", "XGBoost", "Machine Learning", "Financial Analysis", "Risk Modeling"],
+      "highlights": [
+        "1.2M+ company records",
+        "AUC score > 0.8",
+        "Production-ready model",
+        "Comprehensive feature engineering"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Independent Research - Automated ML Platform",
+      "company": "Independent Research",
+      "location": "Remote",
+      "duration": "Jan 2021 - Dec 2021",
+      "type": "Research",
+      "description": "Automated Code Generation Platform for ML Applications - Pioneering research in automated machine learning model generation.",
+      "achievements": [
+        "Engineered an automated deep learning model generation platform",
+        "Leveraged PyTorch/TensorFlow for model architecture creation",
+        "Optimized models for performance using guided architectural visualizations",
+        "Preliminary EDA and suggested modeling techniques included",
+        "Developed framework for non-experts to create ML models"
+      ],
+      "technologies": ["Python", "PyTorch", "TensorFlow", "AutoML", "Code Generation"],
+      "highlights": [
+        "Automated ML model generation",
+        "Multi-framework support",
+        "Performance optimization",
+        "Research innovation"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Software Intern",
+      "company": "Roinet Solutions Pvt. Limited",
+      "location": "Gurugram, India",
+      "duration": "June 2021 - Aug 2021",
+      "type": "Internship",
+      "description": "Software development internship focusing on blockchain and IoT infrastructure development.",
+      "achievements": [
+        "Conceptualized and programmed software for novel blockchain based Internet of Things infrastructure",
+        "Developed innovative solutions for IoT device management",
+        "Implemented blockchain protocols for secure device communication",
+        "Contributed to research publications on blockchain and IoT integration"
+      ],
+      "technologies": ["Python", "Blockchain", "IoT", "Software Development"],
+      "highlights": [
+        "Blockchain-IoT integration",
+        "Novel infrastructure development",
+        "Research contributions",
+        "Early blockchain adoption"
+      ]
+    }
+  ],
+  "skills_summary": {
+    "technical_leadership": [
+      "Cross-functional team management",
+      "Production system architecture",
+      "Technical mentoring and guidance",
+      "Agile development practices"
+    ],
+    "ai_ml_expertise": [
+      "Large Language Models (LLMs)",
+      "Generative AI and prompt engineering",
+      "Deep learning with TensorFlow/PyTorch",
+      "Machine learning model deployment",
+      "Reinforcement learning applications"
+    ],
+    "production_systems": [
+      "AWS cloud infrastructure",
+      "API development and deployment",
+      "Database integration and optimization",
+      "Performance monitoring and optimization"
+    ],
+    "research_experience": [
+      "Academic research and publications",
+      "Experimental design and analysis",
+      "Cutting-edge AI research",
+      "Industry-academia collaboration"
+    ]
+  }
+}

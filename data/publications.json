@@ -1,0 +1,78 @@
+{
+  "publications": [
+    {
+      "id": 1,
+      "title": "Blockchain Tree Powered Green Communication",
+      "publisher": "IEEE",
+      "year": 2022,
+      "category": "Blockchain Technology"
+    },
+    {
+      "id": 2,
+      "title": "Pairing Based Cryptography",
+      "publisher": "SPRINGER",
+      "year": 2022,
+      "category": "Cryptography"
+    },
+    {
+      "id": 3,
+      "title": "Internet of Things and Blockchain",
+      "publisher": "CRC Press",
+      "year": 2023,
+      "category": "Technology Survey"
+    },
+    {
+      "id": 4,
+      "title": "Fog Data Analytics",
+      "publisher": "SPRINGER",
+      "year": 2023,
+      "category": "Distributed Computing"
+    }
+  ],
+  "current_research_interests": [
+    {
+      "area": "Agentic AI Systems and Explainability",
+      "description": "Research focused on developing explainable agentic AI systems that can provide transparent reasoning for autonomous decision-making in production environments.",
+      "applications": ["Financial services automation", "Healthcare decision support", "Real-time compliance monitoring"],
+      "current_focus": "Developing frameworks for explainable multi-agent systems with interpretable reasoning chains"
+    },
+    {
+      "area": "Production-Scale LLM Optimization",
+      "description": "Research into optimizing large language models for production deployment with focus on latency reduction and resource efficiency.",
+      "applications": ["Real-time AI systems", "Enterprise chatbots", "Document intelligence platforms"],
+      "current_focus": "Techniques for 80%+ processing time reduction while maintaining model accuracy"
+    },
+    {
+      "area": "Multi-Modal AI for Document Intelligence",
+      "description": "Research in combining text, visual, and structured data processing for comprehensive document understanding and analysis.",
+      "applications": ["Legal document analysis", "Financial compliance checking", "Healthcare record processing"],
+      "current_focus": "Advanced transformer architectures for multi-modal document processing"
+    },
+    {
+      "area": "Agentic AI in Financial Technology",
+      "description": "Exploring applications of autonomous AI agents in financial services for risk assessment, fraud detection, and automated compliance.",
+      "applications": ["Credit risk modeling", "Real-time fraud detection", "Regulatory compliance automation"],
+      "current_focus": "Developing trustworthy AI agents for high-stakes financial decision-making"
+    }
+  ],
+  "professional_talks": [],
+  "research_interests": [
+    "Agentic AI Systems and Explainability",
+    "Production-Scale LLM Optimization",
+    "Multi-Modal AI for Document Intelligence",
+    "AI in Financial Technology and Risk Assessment",
+    "Real-Time AI Systems and Performance Optimization",
+    "Trustworthy AI for High-Stakes Applications"
+  ],
+  "publication_metrics": {
+    "total_publications": 4,
+    "total_citations": 57,
+    "h_index": 4,
+    "i10_index": 2,
+    "recent_citations": 25,
+    "average_impact_factor": 2.6,
+    "collaboration_index": 2.2
+  },
+  "editorial_activities": [],
+  "awards_and_recognition": []
+}

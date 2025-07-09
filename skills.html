@@ -1,120 +1,367 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Skills</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="certifications.html">Certifications</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
-        <header>
-            <h1>Skills</h1>
-        </header>
-        <main class="main-container">
-            <section class="section-container">
-                <div class="subsection">
-                    <h2>Programming</h2>
-                    <ul>
-                        <li>Python (Preferred)</li>
-                        <li>C++</li>
-                        <li>Java</li>
-                        <li>R</li>
-                    </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Ansh Riyal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-brain me-2"></i>Ansh Riyal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="py-5 text-white" style="margin-top: 76px; background: linear-gradient(135deg, var(--primary-black) 0%, var(--secondary-gray) 100%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="display-4 fw-bold mb-4">
+                        <i class="fas fa-tools me-3"></i>Technical Skills
+                    </h1>
+                    <p class="lead">
+                        Comprehensive expertise in AI, ML, and production systems
+                    </p>
                 </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <h2>Machine Learning & AI</h2>
-                    <ul>
-                        <li>TensorFlow</li>
-                        <li>PyTorch</li>
-                        <li>Keras</li>
-                        <li>Scikit-Learn</li>
-                        <li>Hugging Face</li>
-                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Categories -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row" id="skills-container">
+                <!-- Skills will be loaded dynamically -->
+                <div class="loading">
+                    <div class="spinner"></div>
                 </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <h2>LLMs</h2>
-                    <ul>
-                        <li>Prompt Engineering</li>
-                        <li>Fine-Tuning (PEFT, Distillation, RLHF)</li>
-                        <li>LangChain</li>
-                        <li>Generative AI</li>
-                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Areas -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Areas of Expertise</h2>
+                    <p class="section-subtitle">Specialized domains of knowledge and application</p>
                 </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <h2>Voice & Multi-modal AI</h2>
-                    <ul>
-                        <li>STT/TTS Systems</li>
-                        <li>Structured Prompting</li>
-                    </ul>
+            </div>
+            <div class="row" id="expertise-areas">
+                <!-- Expertise areas will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Certifications</h2>
+                    <p class="section-subtitle">Professional certifications and credentials</p>
                 </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <h2>Data Science</h2>
-                    <ul>
-                        <li>EDA</li>
-                        <li>Modeling</li>
-                        <li>Hypothesis Testing</li>
-                        <li>Causal Inference (CDGs)</li>
-                        <li>Regression</li>
-                        <li>Time Series</li>
-                    </ul>
+            </div>
+            <div class="row" id="certifications-container">
+                <!-- Certifications will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>&copy; 2025 Ansh Riyal. All rights reserved.</p>
                 </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <h2>Big Data & Visualization</h2>
-                    <ul>
-                        <li>SQL</li>
-                        <li>Spark</li>
-                        <li>Hadoop</li>
-                        <li>Dask</li>
-                        <li>Tableau</li>
-                    </ul>
+                <div class="col-lg-6 text-end">
+                    <div class="social-links">
+                        <a href="https://github.com/ANSH-RIYAL" target="_blank" class="text-white me-3">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ansh-riyal-8225061a3/" target="_blank" class="text-white me-3">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ansh.riyal@nyu.edu" class="text-white">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <h2>Cloud & DevOps</h2>
-                    <ul>
-                        <li>AWS (SageMaker, EC2, S3)</li>
-                        <li>Azure</li>
-                        <li>Docker</li>
-                    </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadSkills();
+        });
+
+        async function loadSkills() {
+            try {
+                const response = await fetch('data/skills.json');
+                const data = await response.json();
+                
+                displaySkills(data.skills);
+                displayExpertiseAreas(data.expertise_areas);
+                displayCertifications(data.certifications);
+            } catch (error) {
+                console.error('Error loading skills:', error);
+                document.getElementById('skills-container').innerHTML = 
+                    '<div class="col-12 text-center"><p class="text-muted">Error loading skills data</p></div>';
+            }
+        }
+
+        function displaySkills(skills) {
+            const container = document.getElementById('skills-container');
+            container.innerHTML = '';
+
+            skills.forEach(category => {
+                const skillCard = createSkillCard(category);
+                container.appendChild(skillCard);
+            });
+        }
+
+        function createSkillCard(category) {
+            const card = document.createElement('div');
+            card.className = 'col-lg-6 col-md-6 mb-4';
+
+            const skillsHtml = category.skills.map(skill => `
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">${skill.name}</span>
+                        <span class="skill-level">${skill.level}</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: ${skill.proficiency}%"></div>
+                    </div>
+                    <div class="skill-details">
+                        <small class="text-muted">${skill.years} years experience</small>
+                    </div>
                 </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <h2>Quantitative Tools</h2>
-                    <ul>
-                        <li>Bloomberg</li>
-                        <li>Alpaca</li>
-                        <li>PyAlgoTrade</li>
-                    </ul>
+            `).join('');
+
+            card.innerHTML = `
+                <div class="skill-category h-100">
+                    <h4>
+                        <i class="${category.icon} me-2"></i>
+                        ${category.category}
+                    </h4>
+                    <div class="skills-list">
+                        ${skillsHtml}
+                    </div>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <p><a href="index.html">Home</a></p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+            `;
+
+            return card;
+        }
+
+        function displayExpertiseAreas(expertiseAreas) {
+            const container = document.getElementById('expertise-areas');
+            container.innerHTML = '';
+
+            expertiseAreas.forEach(area => {
+                const areaCard = createExpertiseCard(area);
+                container.appendChild(areaCard);
+            });
+        }
+
+        function createExpertiseCard(area) {
+            const card = document.createElement('div');
+            card.className = 'col-lg-4 col-md-6 mb-4';
+
+            const skillsHtml = area.key_skills.map(skill => 
+                `<span class="tech-tag">${skill}</span>`
+            ).join('');
+
+            card.innerHTML = `
+                <div class="expertise-card h-100">
+                    <h5 class="text-primary mb-3">${area.area}</h5>
+                    <p class="text-muted mb-3">${area.description}</p>
+                    <div class="key-skills">
+                        ${skillsHtml}
+                    </div>
+                </div>
+            `;
+
+            return card;
+        }
+
+        function displayCertifications(certifications) {
+            const container = document.getElementById('certifications-container');
+            container.innerHTML = '';
+
+            certifications.slice(0, 6).forEach(cert => {
+                const certCard = createCertificationCard(cert);
+                container.appendChild(certCard);
+            });
+
+            // Add "View All Certifications" link
+            const viewAllCard = document.createElement('div');
+            viewAllCard.className = 'col-lg-4 col-md-6 mb-4';
+            viewAllCard.innerHTML = `
+                <div class="certification-card h-100 text-center d-flex align-items-center justify-content-center">
+                    <div>
+                        <i class="fas fa-certificate fa-3x text-primary mb-3"></i>
+                        <h5>View All Certifications</h5>
+                        <a href="certifications.html" class="btn btn-primary">
+                            See All <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            `;
+            container.appendChild(viewAllCard);
+        }
+
+        function createCertificationCard(cert) {
+            const card = document.createElement('div');
+            card.className = 'col-lg-4 col-md-6 mb-4';
+
+            card.innerHTML = `
+                <div class="certification-card h-100">
+                    <div class="cert-header">
+                        <h6 class="text-primary mb-2">${cert.name}</h6>
+                        <p class="text-muted mb-2">${cert.issuer}</p>
+                        <span class="badge bg-success">${cert.year}</span>
+                    </div>
+                    <div class="cert-body">
+                        <p class="small text-muted">${cert.description}</p>
+                        <div class="cert-status">
+                            <small class="badge bg-info">${cert.status}</small>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            return card;
+        }
+    </script>
+
+    <style>
+        .skill-item {
+            padding: 15px;
+            margin-bottom: 15px;
+            background: var(--light-bg);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .skill-name {
+            font-weight: 500;
+        }
+
+        .skill-level {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .skill-bar {
+            height: 6px;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 5px;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+
+        .skill-details {
+            text-align: right;
+        }
+
+        .expertise-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .certification-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .certification-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cert-header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        .key-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+    </style>
+</body>
 </html>

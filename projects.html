@@ -1,237 +1,290 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ansh Riyal - Projects</title>
-        <link rel="stylesheet" href="style.css" />
-        <style>
-            .section-container {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                /* grid-gap: 15pt; */
-                padding: 15pt;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ansh Riyal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-brain me-2"></i>Ansh Riyal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="py-5 text-white" style="margin-top: 76px; background: linear-gradient(135deg, var(--primary-black) 0%, var(--secondary-gray) 100%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="display-4 fw-bold mb-4">
+                        <i class="fas fa-code me-3"></i>Projects Portfolio
+                    </h1>
+                    <p class="lead">
+                        Explore my latest work in AI, Machine Learning, and Software Development
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="search-container mb-4">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <input type="text" class="form-control" id="search-input" placeholder="Search projects...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="filter-buttons" id="filter-buttons">
+                        <!-- Filter buttons will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row" id="projects-container">
+                <!-- Projects will be loaded dynamically -->
+                <div class="loading">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>&copy; 2025 Ansh Riyal. All rights reserved.</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <div class="social-links">
+                        <a href="https://github.com/ANSH-RIYAL" target="_blank" class="text-white me-3">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ansh-riyal-8225061a3/" target="_blank" class="text-white me-3">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ansh.riyal@nyu.edu" class="text-white">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Projects page specific functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProjects();
+            setupProjectFiltering();
+            setupProjectSearch();
+        });
+
+        async function loadProjects() {
+            try {
+                const response = await fetch('data/projects.json');
+                const data = await response.json();
+                
+                displayProjects(data.projects);
+                setupFilterButtons(data.categories);
+            } catch (error) {
+                console.error('Error loading projects:', error);
+                document.getElementById('projects-container').innerHTML = 
+                    '<div class="col-12 text-center"><p class="text-muted">Error loading projects</p></div>';
             }
-        </style>
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="certifications.html">Certifications</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
+        }
 
-        <header>
-            <h1>Projects</h1>
-        </header>
+        function displayProjects(projects) {
+            const container = document.getElementById('projects-container');
+            container.innerHTML = '';
 
-        <main class="main-container">
-            <section class="section-container">
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/Data-Analysis-on-Movie-Ratings">
-                        <div class="sub-container">
-                            <h2>Data Analysis on movie ratings</h2>
-                            <p>Data Analysis Project - 2024</p>
-                            <p>
-                                Conducted comprehensive analysis of movie ratings from 1000 users.
-                                Implemented statistical analysis and visualization techniques.
-                                Generated insights on user preferences and rating patterns.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/Data-Analysis-on-Movie-Ratings">
-                        <img src="./images/Data_Analysis_Hypothesis_testing.png" alt="Hypothesis testing" width="250" height="200" />
-                        <br /><br /><br /><br />
-                        <img src="./images/Data_Analysis_Clustering.jpeg" alt="Clustering" width="250" height="200" />
-                    </a>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/Recommender-System">
-                        <div class="sub-container">
-                            <h2>Recommender System</h2>
-                            <p>ML Project - 2024</p>
-                            <p>
-                                Built a collaborative filtering recommender system.
-                                Implemented matrix factorization techniques.
-                                Achieved high accuracy in user preference prediction.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/Recommender-System">
-                        <img src="./images/Recommender_System_Basic.png" alt="Architecture of Recommender Systems" width="250" height="200" />
-                        <br /><br /><br /><br />
-                        <img src="./images/Recommender_System_Ratings.png" alt="Ratings" width="250" height="200" />
-                    </a>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/SkipCode">
-                        <div class="sub-container">
-                            <h2>SkipCode</h2>
-                            <p>Web Development Project - 2024</p>
-                            <p>
-                                Developed a web application for code snippet sharing.
-                                Implemented user authentication and real-time updates.
-                                Created an intuitive interface for code management.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/SkipCode">
-                        <img src="./images/SkipCode_KNN.png" width="250" height="400" />
-                        <img src="./images/SkipCode_Neural_Network.png" width="250" height="200" />
-                    </a>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/RL-ServerGame-Trial">
-                        <div class="sub-container">
-                            <h2>Reinforcement Learning Server Game</h2>
-                            <p>RL Project - 2024</p>
-                            <p>
-                                Developed a server-based game environment for RL agents.
-                                Implemented custom reward mechanisms and state management.
-                                Created a framework for training and evaluating RL models.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/RL-ServerGame-Trial">
-                        <img src="./images/Reinforcement_Learning_base.gif" alt="Hypothesis testing" width="250" height="200" />
-                        <br /><br /><br /><br />
-                        <img src="./images/Reinforcement_Learning_sm1.png" alt="Clustering" width="100" height="100" />
-                        <img src="./images/Reinforcement_Learning_mon1.jpeg" alt="Clustering" width="100" height="100" />
-                        <img src="./images/Reinforcement_Learning_bf1.jpeg" alt="Clustering" width="100" height="100" />
-                        <img src="./images/Reinforcement_Learning_mon2.jpeg" alt="Clustering" width="100" height="100" />
-                    </a>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/Predicting-Probability-of-Default">
-                        <div class="sub-container">
-                            <h2>Predicting Probability of Default</h2>
-                            <p>Financial ML Project - 2024</p>
-                            <p>
-                                Developed ML models to predict company default risk.
-                                Implemented feature engineering and model optimization.
-                                Created a comprehensive risk assessment framework.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/Predicting-Probability-of-Default">
-                        <img src="./images/Probability_of_default_cdf.jpeg" alt="Hypothesis testing" width="250" height="200" />
-                        <br /><br /><br /><br />
-                        <img src="./images/Probability_of_default_modeling.png" alt="Clustering" width="250" height="200" />
-                    </a>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/multi-modal-mna">
-                        <div class="sub-container">
-                            <h2>Studying the impact of Multi-modal input for M&A agreement extraction</h2>
-                            <p>NLP Research Project - 2023</p>
-                            <p>
-                                Investigated multi-modal approaches for M&A agreement analysis.
-                                Implemented advanced NLP techniques for document processing.
-                                Developed novel methods for agreement extraction.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/multi-modal-mna">
-                        <img src="./images/multi_modal_result.png" alt="Hypothesis testing" width="250" height="200" />
-                        <br /><br /><br /><br />
-                        <img src="./images/multi_modal_poster.png" alt="Clustering" width="250" height="200" />
-                    </a>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/Quantum-Neural-Network">
-                        <div class="sub-container">
-                            <h2>Quantum Neural Network Implementation</h2>
-                            <p>Advanced ML Research Project - 2023</p>
-                            <p>
-                                Developed and experimented with Quantum Neural Networks and Hybrid implementations.
-                                Implemented quantum computing concepts in neural network architectures.
-                                Explored the potential of quantum computing in machine learning applications.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/LargeLanguageModels">
-                        <div class="sub-container">
-                            <h2>Large Language Models Experimentation</h2>
-                            <p>NLP Research Project - 2023</p>
-                            <p>
-                                Conducted experiments on popular LLM base models including FLAN T5 and Llama2 7B.
-                                Implemented advanced prompt engineering techniques.
-                                Analyzed model performance across different tasks and domains.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/Stock-Price-Prediction">
-                        <div class="sub-container">
-                            <h2>Stock Price Prediction System</h2>
-                            <p>Financial ML Project - 2022</p>
-                            <p>
-                                Developed ML models for stock price prediction using historical market data.
-                                Implemented various prediction algorithms and evaluation metrics.
-                                Created a comprehensive analysis framework for financial time series data.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <a href="https://github.com/ANSH-RIYAL/BTP-Recolourization">
-                        <div class="sub-container">
-                            <h2>Manga Recolourization System</h2>
-                            <p>Computer Vision Project - 2022</p>
-                            <p>
-                                Built a system for automatic recolourization of manga (Japanese comics) using ML.
-                                Implemented computer vision techniques for image processing.
-                                Developed algorithms for accurate color restoration while maintaining artistic style.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-        </main>
+            projects.forEach(project => {
+                const projectCard = createProjectCard(project);
+                container.appendChild(projectCard);
+            });
+        }
 
-        <footer class="footer">
-            <p><a href="index.html">Home</a></p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+        function createProjectCard(project) {
+            const card = document.createElement('div');
+            card.className = 'col-lg-4 col-md-6 mb-4';
+            card.dataset.categories = project.category;
+
+            const techTags = project.technologies.map(tech => 
+                `<span class="tech-tag">${tech}</span>`
+            ).join('');
+
+            const statusBadge = getStatusBadge(project.status);
+            const yearBadge = `<span class="badge bg-info text-dark">${project.year}</span>`;
+
+            card.innerHTML = `
+                <div class="project-card h-100">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h4 class="mb-0">${project.title}</h4>
+                            <div>
+                                ${statusBadge}
+                                ${yearBadge}
+                            </div>
+                        </div>
+                        <p class="mb-0 opacity-75">${project.subtitle}</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted mb-3">${project.description}</p>
+                        <div class="tech-stack mb-3">
+                            ${techTags}
+                        </div>
+                        ${project.highlights ? `
+                            <div class="project-highlights mb-3">
+                                <h6 class="text-primary">Key Highlights:</h6>
+                                <ul class="small">
+                                    ${project.highlights.map(highlight => `<li>${highlight}</li>`).join('')}
+                                </ul>
+                            </div>
+                        ` : ''}
+                        <div class="project-links">
+                            ${project.github ? `
+                                <a href="${project.github}" class="btn btn-outline-primary btn-sm me-2" target="_blank">
+                                    <i class="fab fa-github me-1"></i>GitHub
+                                </a>
+                            ` : ''}
+                            ${project.demo ? `
+                                <a href="${project.demo}" class="btn btn-outline-success btn-sm" target="_blank">
+                                    <i class="fas fa-external-link-alt me-1"></i>Demo
+                                </a>
+                            ` : ''}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            return card;
+        }
+
+        function getStatusBadge(status) {
+            const badges = {
+                'active': '<span class="badge bg-success">Active</span>',
+                'completed': '<span class="badge bg-primary">Completed</span>',
+                'research': '<span class="badge bg-warning text-dark">Research</span>',
+                'archived': '<span class="badge bg-secondary">Archived</span>'
+            };
+            return badges[status] || '<span class="badge bg-secondary">Unknown</span>';
+        }
+
+        function setupFilterButtons(categories) {
+            const filterContainer = document.getElementById('filter-buttons');
+            filterContainer.innerHTML = '';
+
+            categories.forEach(category => {
+                const button = document.createElement('button');
+                button.className = `filter-btn ${category.id === 'all' ? 'active' : ''}`;
+                button.dataset.category = category.id;
+                button.innerHTML = `<i class="${category.icon} me-2"></i>${category.name}`;
+                filterContainer.appendChild(button);
+            });
+        }
+
+        function setupProjectFiltering() {
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('filter-btn')) {
+                    const category = e.target.dataset.category;
+                    
+                    // Update active button
+                    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                    e.target.classList.add('active');
+
+                    // Filter projects
+                    const projectCards = document.querySelectorAll('#projects-container > div');
+                    projectCards.forEach(card => {
+                        const cardCategories = card.dataset.categories;
+                        if (category === 'all' || cardCategories === category) {
+                            card.style.display = 'block';
+                            card.style.animation = 'fadeInUp 0.5s ease-out';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        }
+
+        function setupProjectSearch() {
+            const searchInput = document.getElementById('search-input');
+            searchInput.addEventListener('input', function(e) {
+                const searchTerm = e.target.value.toLowerCase();
+                const projectCards = document.querySelectorAll('#projects-container > div');
+
+                projectCards.forEach(card => {
+                    const title = card.querySelector('h4').textContent.toLowerCase();
+                    const description = card.querySelector('.card-body p').textContent.toLowerCase();
+                    const technologies = card.querySelectorAll('.tech-tag');
+                    
+                    let techText = '';
+                    technologies.forEach(tech => {
+                        techText += tech.textContent.toLowerCase() + ' ';
+                    });
+
+                    if (title.includes(searchTerm) || 
+                        description.includes(searchTerm) || 
+                        techText.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        }
+    </script>
+</body>
 </html>

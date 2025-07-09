@@ -1,0 +1,184 @@
+{
+  "education": [
+    {
+      "id": 1,
+      "degree": "Masters in Data Science",
+      "institution": "New York University, Center for Data Science (CDS)",
+      "location": "Manhattan, NY",
+      "duration": "Sept. 2022 - May 2024",
+      "gpa": "3.77/4.0",
+      "status": "Completed",
+      "description": "Comprehensive graduate program in data science with focus on machine learning, deep learning, and AI applications.",
+      "key_courses": [
+        "Optimization and Computational Linear Algebra",
+        "Applied Machine Learning in Finance",
+        "Introduction to Data Science",
+        "Probability & Statistics for Data Science",
+        "Big Data",
+        "Machine Learning",
+        "Deep Learning",
+        "Natural Language Understanding"
+      ],
+      "achievements": [
+        "Capstone Project: Multi-Modal M&A Agreement Extraction",
+        "Research Project: Bank Loan Default Modeling (AUC > 0.8)",
+        "Teaching Assistant for 450+ students",
+        "Published research on document intelligence"
+      ],
+      "highlights": [
+        "Top 15% of class",
+        "Research publications",
+        "Industry collaboration projects",
+        "Advanced AI coursework"
+      ]
+    },
+    {
+      "id": 2,
+      "degree": "Bachelor of Engineering, Computer Engineering",
+      "institution": "University of Delhi, NSIT",
+      "location": "Delhi, India",
+      "duration": "Sept. 2018 - June 2022",
+      "gpa": "8.33/10 (4.0/4.0)",
+      "status": "Completed",
+      "description": "Comprehensive undergraduate program in computer engineering with specialization in AI, ML, and software development.",
+      "key_courses": [
+        "Banking Methods",
+        "Machine Learning and Artificial Intelligence",
+        "Natural Language Processing",
+        "Mathematical Statistics",
+        "Modeling and Simulation",
+        "Numerical Methods",
+        "Data Structures and Algorithms",
+        "Computer Networks",
+        "Database Management Systems"
+      ],
+      "achievements": [
+        "Final Year Project: Blockchain-based IoT Infrastructure",
+        "Multiple research publications",
+        "Internship at Roinet Solutions",
+        "Active in competitive programming"
+      ],
+      "highlights": [
+        "First Class with Distinction",
+        "Early AI/ML research",
+        "Industry internships",
+        "Multiple publications"
+      ]
+    }
+  ],
+  "academic_projects": [
+    {
+      "title": "Multi-Modal M&A Agreement Extraction",
+      "type": "Master's Capstone",
+      "duration": "Sept 2023 - Dec 2023",
+      "institution": "NYU",
+      "description": "Advanced research project utilizing transformer architectures for legal document processing.",
+      "technologies": ["Python", "BERT", "Transformers", "Multi-modal AI", "Legal Tech"],
+      "outcomes": [
+        "Advanced transformer implementation",
+        "Multi-modal document processing",
+        "End-to-end automation pipeline",
+        "Legal document intelligence"
+      ]
+    },
+    {
+      "title": "Bank Loan Default Modeling",
+      "type": "Research Project",
+      "duration": "Sept 2022 - Dec 2022",
+      "institution": "NYU",
+      "description": "Comprehensive analysis of 1.2M company records for loan default prediction.",
+      "technologies": ["Python", "XGBoost", "Machine Learning", "Financial Analysis"],
+      "outcomes": [
+        "AUC score > 0.8",
+        "Production-ready model",
+        "Comprehensive feature engineering",
+        "Real-world financial application"
+      ]
+    },
+    {
+      "title": "Blockchain-based IoT Infrastructure",
+      "type": "Bachelor's Final Year Project",
+      "duration": "Jan 2022 - June 2022",
+      "institution": "University of Delhi",
+      "description": "Novel infrastructure combining blockchain technology with IoT for secure device management.",
+      "technologies": ["Python", "Blockchain", "IoT", "Cryptography"],
+      "outcomes": [
+        "Patent application filed",
+        "Research publication",
+        "Industry collaboration",
+        "Award for innovation"
+      ]
+    }
+  ],
+  "research_interests": [
+    "Large Language Models and Generative AI",
+    "Agentic AI Systems and Multi-Agent Architectures",
+    "Financial Technology and Risk Modeling",
+    "Document Intelligence and Legal Tech",
+    "Quantum Machine Learning",
+    "Real-time AI and Edge Computing"
+  ],
+  "academic_achievements": [
+    {
+      "achievement": "Graduate Research Fellowship",
+      "year": 2023,
+      "description": "Awarded for outstanding research in AI and machine learning"
+    },
+    {
+      "achievement": "Dean's List",
+      "year": 2023,
+      "description": "Recognition for academic excellence at NYU"
+    },
+    {
+      "achievement": "Best Paper Award",
+      "year": 2022,
+      "description": "Blockchain Tree Powered Green Communication (IEEE)"
+    },
+    {
+      "achievement": "University Merit Scholarship",
+      "year": 2019,
+      "description": "Scholarship for academic excellence at University of Delhi"
+    }
+  ],
+  "teaching_experience": [
+    {
+      "role": "Teaching Assistant",
+      "course": "Introduction to Data Science",
+      "institution": "NYU",
+      "duration": "Sept 2023 - Present",
+      "students": "150+",
+      "responsibilities": [
+        "Conducting lab sessions",
+        "Grading assignments and exams",
+        "Mentoring student projects",
+        "Office hours and tutoring"
+      ]
+    },
+    {
+      "role": "Teaching Assistant",
+      "course": "Big Data",
+      "institution": "NYU",
+      "duration": "Sept 2023 - Present",
+      "students": "200+",
+      "responsibilities": [
+        "Facilitating practical sessions",
+        "Assignment grading",
+        "Student mentoring",
+        "Technical support"
+      ]
+    },
+    {
+      "role": "Teaching Assistant",
+      "course": "Principles of Data Science",
+      "institution": "NYU",
+      "duration": "Sept 2023 - Present",
+      "students": "100+",
+      "responsibilities": [
+        "Lab instruction",
+        "Project guidance",
+        "Academic support",
+        "Curriculum development"
+      ]
+    }
+  ]
+}

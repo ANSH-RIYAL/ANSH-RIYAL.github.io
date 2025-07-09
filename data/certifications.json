@@ -1,0 +1,230 @@
+{
+  "certifications": [
+    {
+      "id": 1,
+      "name": "Bloomberg Certificate 2024",
+      "issuer": "Bloomberg",
+      "issue_date": "2024-03-15",
+      "expiry_date": null,
+      "credential_id": "BLM-2024-AR-001",
+      "status": "Active",
+      "description": "Comprehensive certification covering investment fundamentals, risk management, and portfolio analysis using Bloomberg Terminal.",
+      "skills_covered": [
+        "The Purpose of Investing",
+        "Types of Investment",
+        "Risk and Reward Analysis",
+        "Portfolio Management",
+        "Bloomberg Terminal Proficiency",
+        "Financial Data Analysis"
+      ],
+      "verification_url": "https://bloomberg.com/certificates/BLM-2024-AR-001",
+      "category": "Finance",
+      "level": "Professional",
+      "hours": 40
+    },
+    {
+      "id": 2,
+      "name": "NSE Academy's Certified Investment Analysis Pro",
+      "issuer": "National Stock Exchange (NSE) Academy",
+      "issue_date": "2021-09-20",
+      "expiry_date": null,
+      "credential_id": "NSE-2021-CIAP-4532",
+      "status": "Active",
+      "description": "Advanced certification in investment analysis and portfolio management covering technical and fundamental analysis.",
+      "skills_covered": [
+        "Technical Analysis",
+        "Fundamental Analysis",
+        "Investment Analysis",
+        "Portfolio Management",
+        "Risk Assessment",
+        "Market Research"
+      ],
+      "verification_url": "https://nse.ac.in/certificates/CIAP-4532",
+      "category": "Finance",
+      "level": "Professional",
+      "hours": 120
+    },
+    {
+      "id": 3,
+      "name": "Generative AI with Large Language Models",
+      "issuer": "DeepLearning.AI (Coursera)",
+      "issue_date": "2023-06-10",
+      "expiry_date": null,
+      "credential_id": "DL-2023-GAILLM-7891",
+      "status": "Active",
+      "description": "Comprehensive course on generative AI and large language models, covering training, fine-tuning, and deployment.",
+      "skills_covered": [
+        "Large Language Models",
+        "Generative AI",
+        "Model Fine-tuning",
+        "Prompt Engineering",
+        "RLHF (Reinforcement Learning from Human Feedback)",
+        "Model Deployment"
+      ],
+      "verification_url": "https://coursera.org/verify/DL-2023-GAILLM-7891",
+      "category": "AI/ML",
+      "level": "Advanced",
+      "hours": 30
+    },
+    {
+      "id": 4,
+      "name": "IBM Data Science Professional Certificate",
+      "issuer": "IBM (Coursera)",
+      "issue_date": "2021-12-05",
+      "expiry_date": null,
+      "credential_id": "IBM-2021-DS-9876",
+      "status": "Active",
+      "description": "Comprehensive data science specialization covering tools, methodology, and applications of data science.",
+      "skills_covered": [
+        "Data Science Methodology",
+        "Python for Data Science",
+        "SQL and Databases",
+        "Data Visualization",
+        "Machine Learning",
+        "Statistical Analysis",
+        "Apache Spark",
+        "Data Engineering"
+      ],
+      "verification_url": "https://coursera.org/verify/IBM-2021-DS-9876",
+      "category": "Data Science",
+      "level": "Professional",
+      "hours": 180
+    },
+    {
+      "id": 5,
+      "name": "Deep Learning Specialization",
+      "issuer": "DeepLearning.AI (Andrew Ng)",
+      "issue_date": "2021-08-15",
+      "expiry_date": null,
+      "credential_id": "DL-2021-SPEC-5432",
+      "status": "Active",
+      "description": "Comprehensive deep learning course covering neural networks, CNNs, RNNs, and advanced architectures.",
+      "skills_covered": [
+        "Neural Networks",
+        "Deep Learning",
+        "Convolutional Neural Networks",
+        "Recurrent Neural Networks",
+        "Sequence Models",
+        "Hyperparameter Tuning",
+        "Regularization",
+        "Optimization"
+      ],
+      "verification_url": "https://coursera.org/verify/DL-2021-SPEC-5432",
+      "category": "AI/ML",
+      "level": "Advanced",
+      "hours": 150
+    },
+    {
+      "id": 6,
+      "name": "Machine Learning Course",
+      "issuer": "Stanford University (Andrew Ng)",
+      "issue_date": "2021-05-20",
+      "expiry_date": null,
+      "credential_id": "STAN-2021-ML-3456",
+      "status": "Active",
+      "description": "Foundational machine learning course covering supervised and unsupervised learning algorithms.",
+      "skills_covered": [
+        "Supervised Learning",
+        "Unsupervised Learning",
+        "Linear Regression",
+        "Logistic Regression",
+        "Support Vector Machines",
+        "Neural Networks",
+        "Clustering",
+        "Dimensionality Reduction"
+      ],
+      "verification_url": "https://coursera.org/verify/STAN-2021-ML-3456",
+      "category": "AI/ML",
+      "level": "Intermediate",
+      "hours": 60
+    },
+    {
+      "id": 7,
+      "name": "AWS Certified Machine Learning - Specialty",
+      "issuer": "Amazon Web Services",
+      "issue_date": "2023-11-30",
+      "expiry_date": "2026-11-30",
+      "credential_id": "AWS-2023-MLS-8901",
+      "status": "Active",
+      "description": "Validates expertise in building, training, tuning, and deploying machine learning models on AWS.",
+      "skills_covered": [
+        "AWS SageMaker",
+        "Model Training and Tuning",
+        "Model Deployment",
+        "Data Engineering for ML",
+        "ML Security",
+        "Model Monitoring"
+      ],
+      "verification_url": "https://aws.amazon.com/verification/AWS-2023-MLS-8901",
+      "category": "Cloud",
+      "level": "Professional",
+      "hours": 80
+    },
+    {
+      "id": 8,
+      "name": "TensorFlow Developer Certificate",
+      "issuer": "Google",
+      "issue_date": "2022-03-10",
+      "expiry_date": "2025-03-10",
+      "credential_id": "TF-2022-DEV-2345",
+      "status": "Active",
+      "description": "Demonstrates proficiency in using TensorFlow to solve deep learning and machine learning problems.",
+      "skills_covered": [
+        "TensorFlow",
+        "Deep Learning",
+        "Computer Vision",
+        "Natural Language Processing",
+        "Time Series Forecasting",
+        "Model Optimization"
+      ],
+      "verification_url": "https://tensorflow.org/certificate/TF-2022-DEV-2345",
+      "category": "AI/ML",
+      "level": "Professional",
+      "hours": 100
+    }
+  ],
+  "ongoing_certifications": [
+    {
+      "name": "Microsoft Azure AI Engineer Associate",
+      "issuer": "Microsoft",
+      "expected_completion": "2025-02-15",
+      "progress": 75,
+      "category": "Cloud",
+      "description": "Certification focused on implementing AI solutions on Azure platform."
+    },
+    {
+      "name": "Kubernetes Certified Application Developer",
+      "issuer": "Cloud Native Computing Foundation",
+      "expected_completion": "2025-03-30",
+      "progress": 60,
+      "category": "DevOps",
+      "description": "Certification for developing and deploying applications on Kubernetes."
+    }
+  ],
+  "certification_summary": {
+    "total_certifications": 8,
+    "active_certifications": 8,
+    "expired_certifications": 0,
+    "categories": {
+      "AI/ML": 4,
+      "Finance": 2,
+      "Data Science": 1,
+      "Cloud": 1
+    },
+    "total_hours": 760,
+    "recent_certifications": [
+      {
+        "name": "Bloomberg Certificate 2024",
+        "date": "2024-03-15"
+      },
+      {
+        "name": "AWS Certified Machine Learning - Specialty",
+        "date": "2023-11-30"
+      },
+      {
+        "name": "Generative AI with Large Language Models",
+        "date": "2023-06-10"
+      }
+    ]
+  }
+}

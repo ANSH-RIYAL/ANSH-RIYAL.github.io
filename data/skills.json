@@ -1,0 +1,190 @@
+{
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "icon": "fas fa-code",
+      "skills": [
+        {"name": "Python", "level": "Expert", "years": 5, "proficiency": 95},
+        {"name": "C++", "level": "Advanced", "years": 4, "proficiency": 85},
+        {"name": "Java", "level": "Advanced", "years": 3, "proficiency": 80},
+        {"name": "R", "level": "Intermediate", "years": 2, "proficiency": 70},
+        {"name": "JavaScript", "level": "Intermediate", "years": 2, "proficiency": 75},
+        {"name": "SQL", "level": "Advanced", "years": 4, "proficiency": 85}
+      ]
+    },
+    {
+      "category": "Machine Learning & AI",
+      "icon": "fas fa-brain",
+      "skills": [
+        {"name": "TensorFlow", "level": "Expert", "years": 4, "proficiency": 90},
+        {"name": "PyTorch", "level": "Expert", "years": 4, "proficiency": 92},
+        {"name": "Keras", "level": "Advanced", "years": 3, "proficiency": 85},
+        {"name": "Scikit-Learn", "level": "Expert", "years": 5, "proficiency": 95},
+        {"name": "Hugging Face", "level": "Advanced", "years": 2, "proficiency": 88},
+        {"name": "OpenCV", "level": "Advanced", "years": 3, "proficiency": 80}
+      ]
+    },
+    {
+      "category": "Large Language Models",
+      "icon": "fas fa-robot",
+      "skills": [
+        {"name": "Prompt Engineering", "level": "Expert", "years": 2, "proficiency": 95},
+        {"name": "Fine-Tuning (PEFT)", "level": "Advanced", "years": 2, "proficiency": 85},
+        {"name": "Model Distillation", "level": "Advanced", "years": 1, "proficiency": 80},
+        {"name": "RLHF", "level": "Intermediate", "years": 1, "proficiency": 75},
+        {"name": "LangChain", "level": "Advanced", "years": 2, "proficiency": 88},
+        {"name": "Generative AI", "level": "Expert", "years": 2, "proficiency": 90},
+        {"name": "RAG Systems", "level": "Advanced", "years": 2, "proficiency": 85}
+      ]
+    },
+    {
+      "category": "Voice & Multi-modal AI",
+      "icon": "fas fa-microphone",
+      "skills": [
+        {"name": "STT/TTS Systems", "level": "Advanced", "years": 2, "proficiency": 80},
+        {"name": "Structured Prompting", "level": "Expert", "years": 2, "proficiency": 90},
+        {"name": "Multi-modal Processing", "level": "Advanced", "years": 2, "proficiency": 85},
+        {"name": "Audio Processing", "level": "Intermediate", "years": 1, "proficiency": 70}
+      ]
+    },
+    {
+      "category": "Data Science & Analytics",
+      "icon": "fas fa-chart-bar",
+      "skills": [
+        {"name": "Exploratory Data Analysis", "level": "Expert", "years": 5, "proficiency": 95},
+        {"name": "Statistical Modeling", "level": "Advanced", "years": 4, "proficiency": 88},
+        {"name": "Hypothesis Testing", "level": "Advanced", "years": 3, "proficiency": 85},
+        {"name": "Causal Inference", "level": "Advanced", "years": 2, "proficiency": 80},
+        {"name": "Time Series Analysis", "level": "Advanced", "years": 3, "proficiency": 85},
+        {"name": "A/B Testing", "level": "Advanced", "years": 2, "proficiency": 80}
+      ]
+    },
+    {
+      "category": "Big Data & Databases",
+      "icon": "fas fa-database",
+      "skills": [
+        {"name": "Apache Spark", "level": "Advanced", "years": 3, "proficiency": 85},
+        {"name": "Hadoop", "level": "Intermediate", "years": 2, "proficiency": 70},
+        {"name": "Dask", "level": "Advanced", "years": 2, "proficiency": 80},
+        {"name": "MongoDB", "level": "Advanced", "years": 3, "proficiency": 82},
+        {"name": "PostgreSQL", "level": "Advanced", "years": 4, "proficiency": 88},
+        {"name": "Vector Databases", "level": "Advanced", "years": 1, "proficiency": 75}
+      ]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "icon": "fas fa-cloud",
+      "skills": [
+        {"name": "AWS SageMaker", "level": "Advanced", "years": 3, "proficiency": 88},
+        {"name": "AWS EC2", "level": "Advanced", "years": 3, "proficiency": 85},
+        {"name": "AWS S3", "level": "Advanced", "years": 3, "proficiency": 90},
+        {"name": "Azure", "level": "Intermediate", "years": 2, "proficiency": 75},
+        {"name": "Docker", "level": "Advanced", "years": 3, "proficiency": 85},
+        {"name": "Kubernetes", "level": "Intermediate", "years": 1, "proficiency": 65}
+      ]
+    },
+    {
+      "category": "Web Development",
+      "icon": "fas fa-globe",
+      "skills": [
+        {"name": "Flask", "level": "Advanced", "years": 3, "proficiency": 85},
+        {"name": "Django", "level": "Advanced", "years": 3, "proficiency": 80},
+        {"name": "FastAPI", "level": "Advanced", "years": 2, "proficiency": 85},
+        {"name": "REST APIs", "level": "Expert", "years": 4, "proficiency": 90},
+        {"name": "HTML/CSS", "level": "Intermediate", "years": 3, "proficiency": 75},
+        {"name": "React", "level": "Beginner", "years": 1, "proficiency": 60}
+      ]
+    },
+    {
+      "category": "Quantitative Finance",
+      "icon": "fas fa-chart-line",
+      "skills": [
+        {"name": "Bloomberg Terminal", "level": "Intermediate", "years": 1, "proficiency": 70},
+        {"name": "Alpaca API", "level": "Intermediate", "years": 1, "proficiency": 75},
+        {"name": "PyAlgoTrade", "level": "Intermediate", "years": 1, "proficiency": 70},
+        {"name": "Risk Modeling", "level": "Advanced", "years": 2, "proficiency": 85},
+        {"name": "Financial Analysis", "level": "Advanced", "years": 2, "proficiency": 80}
+      ]
+    },
+    {
+      "category": "Research & Publications",
+      "icon": "fas fa-microscope",
+      "skills": [
+        {"name": "Research Methodology", "level": "Advanced", "years": 4, "proficiency": 85},
+        {"name": "Academic Writing", "level": "Advanced", "years": 4, "proficiency": 85},
+        {"name": "Experimental Design", "level": "Advanced", "years": 3, "proficiency": 80},
+        {"name": "Literature Review", "level": "Advanced", "years": 4, "proficiency": 88},
+        {"name": "Peer Review", "level": "Intermediate", "years": 2, "proficiency": 75}
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Bloomberg Certificate 2024",
+      "issuer": "Bloomberg",
+      "year": 2024,
+      "description": "The Purpose of Investing, Types of Investment, Risk and Reward, Portfolio Management",
+      "credential_id": "BLM-2024-AR",
+      "status": "active"
+    },
+    {
+      "name": "NSE Academy's Certified Investment Analysis Pro",
+      "issuer": "NSE Academy",
+      "year": 2021,
+      "description": "Technical Analysis, Fundamental Analysis, and Investment Analysis & Portfolio Management",
+      "credential_id": "NSE-2021-CIAP",
+      "status": "active"
+    },
+    {
+      "name": "Generative AI with LLMs",
+      "issuer": "DeepLearning.AI",
+      "year": 2023,
+      "description": "Comprehensive course on generative AI and large language models",
+      "credential_id": "DL-2023-GAILLM",
+      "status": "active"
+    },
+    {
+      "name": "IBM Data Science Professional Certificate",
+      "issuer": "IBM",
+      "year": 2021,
+      "description": "Comprehensive data science specialization covering tools, methodology, and applications",
+      "credential_id": "IBM-2021-DS",
+      "status": "active"
+    },
+    {
+      "name": "Deep Learning Specialization",
+      "issuer": "DeepLearning.AI (Andrew Ng)",
+      "year": 2021,
+      "description": "Comprehensive deep learning course covering neural networks, CNNs, RNNs, and more",
+      "credential_id": "DL-2021-SPEC",
+      "status": "active"
+    }
+  ],
+  "expertise_areas": [
+    {
+      "area": "Production ML Systems",
+      "description": "Designing and deploying scalable machine learning systems for production environments",
+      "key_skills": ["Model Deployment", "API Development", "Performance Optimization", "Monitoring"]
+    },
+    {
+      "area": "Agentic AI Systems",
+      "description": "Building autonomous AI systems capable of independent decision-making and task execution",
+      "key_skills": ["LLM Integration", "Prompt Engineering", "Multi-Agent Systems", "RAG"]
+    },
+    {
+      "area": "Financial AI",
+      "description": "Applying AI and ML techniques to financial analysis, risk assessment, and trading",
+      "key_skills": ["Risk Modeling", "Algorithmic Trading", "Credit Analysis", "Portfolio Management"]
+    },
+    {
+      "area": "Document Intelligence",
+      "description": "Extracting insights from structured and unstructured documents using AI",
+      "key_skills": ["NLP", "OCR", "Information Extraction", "Legal Tech"]
+    },
+    {
+      "area": "Real-time AI",
+      "description": "Developing AI systems capable of real-time processing and decision-making",
+      "key_skills": ["Stream Processing", "Low-latency Systems", "Edge AI", "Optimization"]
+    }
+  ]
+}

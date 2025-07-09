@@ -1,176 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ansh Riyal - Resume</title>
-        <link rel="stylesheet" href="style.css" />
-        <style>
-            /* Additional CSS styles */
-            .main-container {
-                display: block; /* Change display property to block */
-                margin: 0 auto; /* Center the container horizontally */
-                max-width: 800px; /* Adjust max-width as needed */
-            }
-            .resume-container {
-                max-width: 800px;
-                margin: 2rem auto;
-                padding: 2rem;
-                background: var(--bg-color);
-                border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-            .resume-header {
-                text-align: center;
-                margin-bottom: 2rem;
-            }
-            .resume-section {
-                margin-bottom: 2rem;
-            }
-            .resume-section h2 {
-                color: var(--primary-color);
-                border-bottom: 2px solid var(--primary-color);
-                padding-bottom: 0.5rem;
-                margin-bottom: 1rem;
-            }
-            .download-button {
-                display: inline-block;
-                padding: 0.8rem 1.5rem;
-                background-color: var(--primary-color);
-                color: white;
-                text-decoration: none;
-                border-radius: 4px;
-                margin: 1rem 0;
-                transition: background-color 0.3s;
-            }
-            .download-button:hover {
-                background-color: var(--secondary-color);
-            }
-        </style>
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="certifications.html">Certifications</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
-        <header>
-            <h1>Resume</h1>
-        </header>
-        <main class="main-container">
-            <div class="resume-container">
-                <div class="resume-header">
-                    <h2>Ansh Riyal</h2>
-                    <p>Machine Learning Engineer | LLM Systems | Real-Time Agentic AI | Python | AWS</p>
-                    <p>Email: ansh.riyal@nyu.edu | Phone: +1 3472071322</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Ansh Riyal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-brain me-2"></i>Ansh Riyal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="py-5 text-white" style="margin-top: 76px; background: linear-gradient(135deg, var(--primary-black) 0%, var(--secondary-gray) 100%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Ansh Riyal</h1>
+                    <h2 class="h3 mb-4">Machine Learning Engineer | LLM Systems | Real-Time Agentic AI</h2>
+                    <p class="lead mb-4">
+                        AI/ML Engineer with experience deploying models in financial and compliance domains, 
+                        specializing in structured and unstructured financial data, LLM applications for 
+                        document intelligence, and time-series forecasting.
+                    </p>
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="mb-2">
+                                    <i class="fas fa-envelope me-2"></i>
+                                    ansh.riyal@nyu.edu
+                                </p>
+                                <p class="mb-2">
+                                    <i class="fas fa-phone me-2"></i>
+                                    +1 (347) 207-1322
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="mb-2">
+                                    <i class="fas fa-map-marker-alt me-2"></i>
+                                    Manhattan, New York, USA
+                                </p>
+                                <p class="mb-2">
+                                    <i class="fab fa-linkedin me-2"></i>
+                                    <a href="https://www.linkedin.com/in/ansh-riyal-8225061a3/" target="_blank" class="text-white">
+                                        LinkedIn Profile
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="resume-section">
-                    <h2>Summary</h2>
-                    <p>Machine Learning Engineer with hands-on experience building end-to-end agentic systems, specializing in LLM workflows (LangChain), real-time voice interfaces (STT/TTS), and latency-optimized ML pipelines. Proven leadership in early-stage product development, scalable ML deployment, and multi-modal AI applications. Looking to own and scale core AI infrastructure at high-velocity and development teams. Strong in both research and engineering, with production-grade deployments using PyTorch, TensorFlow, Flask/Django, and AWS.</p>
-                </div>
-                <div class="resume-section">
-                    <h2>Key Skills</h2>
-                    <ul>
-                        <li><strong>Programming:</strong> Python (Preferred), C++, Java, R</li>
-                        <li><strong>Machine Learning & AI:</strong> TensorFlow, PyTorch, Keras, Scikit-Learn, Hugging Face</li>
-                        <li><strong>LLMs:</strong> Prompt Engineering, Fine-Tuning (PEFT, Distillation, RLHF), LangChain, Generative AI</li>
-                        <li><strong>Voice & Multi-modal AI:</strong> STT/TTS Systems, Structured Prompting</li>
-                        <li><strong>Data Science:</strong> EDA, Modeling, Hypothesis Testing, Causal Inference (CDGs), Regression, Time Series</li>
-                        <li><strong>Big Data & Visualization:</strong> SQL, Spark, Hadoop, Dask, Tableau</li>
-                        <li><strong>Cloud & DevOps:</strong> AWS (SageMaker, EC2, S3), Azure, Docker</li>
-                        <li><strong>Quantitative Tools:</strong> Bloomberg, Alpaca, PyAlgoTrade</li>
-                    </ul>
-                </div>
-                <div class="resume-section">
-                    <h2>Professional Experience</h2>
-                    <ul>
-                        <li><strong>Machine Learning Engineer (Team Lead), METY Technology, Virginia (Remote)</strong> <span style="float:right">Sept 2023 - Present</span>
-                            <ul>
-                                <li>Engineered and refined core ML systems for prediction modeling using TensorFlow and PyTorch for deployment. Managed and streamlined production environments on AWS EC2 and SageMaker, integrating S3 storage and SQL databases. Hosted APIs with Flask and Django, resulting in minimal downtime, high throughput, and an 80% reduction in processing time and 50% decrease in latency.</li>
-                                <li>Developed and maintained agentic LLM-based systems for personalized health guidance using structured prompts and RAG pipelines.</li>
-                                <li>Interpreting and synthesizing user log data to measure compliance with user plans, biological and psychological effects of following the plan, etc. in partnership with top US and Canada Universities.</li>
-                                <li>Overseeing and coordinating three cross-functional teams on API management and product enhancements.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Teaching Staff + Grader, New York University, New York</strong> <span style="float:right">Sept 2023 - Present</span>
-                            <ul>
-                                <li>Developing and facilitating multiple graduate and undergraduate courses of 450+ students as a teaching assistant at NYU Center for Data Science. Subjects encompass - 'Introduction to Data Science', 'Big Data' and 'Principles of Data Science'.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Impact of Multi-Modal Input for M&A Agreement Extraction, NYU Capstone</strong> <span style="float:right">Sept 2023 - Dec 2023</span>
-                            <ul>
-                                <li>Utilized advanced transformer architectures and fine-tuned BERT models for M&A agreement extraction, utilizing fuzzy matching algorithms and multi-modal inputs for enhanced accuracy.</li>
-                                <li>Constructed and automated an end-to-end data pipeline. Leveraged structured prompting templates to transform data from existing document structures into a standardized format that preserved legal structure information across multiple databases.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Modeling the Probability of Bank Loan Defaults, NYU Research</strong> <span style="float:right">Sept 2022 - Dec 2022</span>
-                            <ul>
-                                <li>Analyzed and processed a real-world dataset containing 1.2 million company records to predict the probability of loan defaults. Achieved an AUC score greater than 0.8 along with good accuracy.</li>
-                                <li>Executed data cleaning, engineered feature extraction, selection and modification. Explored various modeling approaches, ranging from xgboost, gbm, etc. to Neural Networks.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Automated Code Generation Platform for ML Applications, Independent Research</strong> <span style="float:right">Jan 2021 - Dec 2021</span>
-                            <ul>
-                                <li>Engineered an automated deep learning model generation platform, leveraging PyTorch/TensorFlow for model architecture creation, and optimized models for performance using guided architectural visualizations.</li>
-                                <li>Preliminary EDA and suggested modeling techniques included.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Software Intern, Roinet Solutions Pvt. Limited, Gurugram, India</strong> <span style="float:right">June 2021 - Aug 2021</span>
-                            <ul>
-                                <li>Conceptualized and programmed software for novel blockchain based Internet of Things infrastructure.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="resume-section">
-                    <h2>Education</h2>
-                    <ul>
-                        <li><strong>New York University, Center for Data Science (CDS), Manhattan, NY</strong> <span style="float:right">Sept. 2022 -  May 2024</span>
-                            <ul>
-                                <li>Masters in Data Science, Overall GPA: 3.77/4.0</li>
-                                <li>Optimization and Computational Linear Algebra, Applied ML in Finance, Intro to Data Science, Probability & Statistics for Data Science, Big Data, Machine Learning, Deep Learning, Natural Language Understanding</li>
-                            </ul>
-                        </li>
-                        <li><strong>University of Delhi, NSIT, Delhi, India</strong> <span style="float:right">Sept. 2018 - June 2022</span>
-                            <ul>
-                                <li>Bachelor of Engineering, Computer Engineering, Overall GPA: 8.33/10 or 4.0/4.0</li>
-                                <li>Finance & Data Science: Banking Methods, Machine Learning and Artificial Intelligence, NLP</li>
-                                <li>Mathematics: Mathematical Statistics, Modeling and Simulation, Numerical Methods, etc.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="resume-section">
-                    <h2>Publications</h2>
-                    <ul>
-                        <li>Blockchain Tree Powered Green Communication (Publisher: IEEE)</li>
-                        <li>Pairing Based Cryptography (Publisher: SPRINGER)</li>
-                        <li>Internet of Things and Blockchain (Publisher: CRC Press)</li>
-                        <li>Fog Data Analytics (Publisher: SPRINGER)</li>
-                    </ul>
-                </div>
-                <div class="resume-section">
-                    <h2>Certifications</h2>
-                    <ul>
-                        <li>Bloomberg Certificate 2024</li>
-                        <li>The Purpose of Investing, Types of Investment, Risk and Reward, Portfolio Management</li>
-                        <li>NSE Academy's Certified Investment Analysis Pro 2021</li>
-                        <li>Technical Analysis, Fundamental Analysis, and Investment Analysis & Portfolio Management</li>
-                        <li>Data Science & Machine Learning Coursework (Andrew Ng, IBM etc.) 2021</li>
-                    </ul>
+                <div class="col-lg-4 text-center">
+                    <div class="resume-actions">
+                        <a href="#" class="btn btn-outline-light btn-lg mb-3" id="download-resume">
+                            <i class="fas fa-download me-2"></i>Download PDF
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg mb-3" id="print-resume">
+                            <i class="fas fa-print me-2"></i>Print Resume
+                        </a>
+                    </div>
                 </div>
             </div>
-        </main>
-        <footer class="footer">
-            <p><a href="index.html">Home</a></p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+        </div>
+    </section>
+
+    <!-- Resume Content -->
+    <section class="py-5" id="resume-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Professional Summary -->
+                    <div class="resume-section mb-5">
+                        <h3 class="section-title">Professional Summary</h3>
+                        <p class="summary-text">
+                            AI/ML Engineer with experience deploying models in financial and compliance domains, 
+                            specializing in structured and unstructured financial data, LLM applications for 
+                            document intelligence, and time-series forecasting. Proven track record of building 
+                            scalable, production-grade ML systems with a focus on high-value use cases: credit risk, 
+                            KYC automation, and adaptive learning. Actively seeking roles in fintech or quant ML 
+                            with a focus on applied research and deployment.
+                        </p>
+                    </div>
+
+                    <!-- Professional Experience -->
+                    <div class="resume-section mb-5">
+                        <h3 class="section-title">Professional Experience</h3>
+                        <div id="experience-content">
+                            <!-- Experience will be loaded dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="resume-section mb-5">
+                        <h3 class="section-title">Education</h3>
+                        <div id="education-content">
+                            <!-- Education will be loaded dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Publications -->
+                    <div class="resume-section mb-5">
+                        <h3 class="section-title">Publications</h3>
+                        <div id="publications-content">
+                            <ul class="publication-list">
+                                <li>Blockchain Tree Powered Green Communication (Publisher: IEEE)</li>
+                                <li>Pairing Based Cryptography (Publisher: SPRINGER)</li>
+                                <li>Internet of Things and Blockchain (Publisher: CRC Press)</li>
+                                <li>Fog Data Analytics (Publisher: SPRINGER)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- Key Skills -->
+                    <div class="resume-section mb-5">
+                        <h3 class="section-title">Key Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h6 class="skill-category-title">Programming</h6>
+                                <p>Python (Preferred), C++, Java, R</p>
+                            </div>
+                            <div class="skill-category">
+                                <h6 class="skill-category-title">Machine Learning & AI</h6>
+                                <p>TensorFlow, PyTorch, Keras, Scikit-Learn, Hugging Face</p>
+                            </div>
+                            <div class="skill-category">
+                                <h6 class="skill-category-title">LLMs</h6>
+                                <p>Prompt Engineering, Fine-Tuning (PEFT, Distillation, RLHF), LangChain, Generative AI</p>
+                            </div>
+                            <div class="skill-category">
+                                <h6 class="skill-category-title">Voice & Multi-modal AI</h6>
+                                <p>STT/TTS Systems, Structured Prompting</p>
+                            </div>
+                            <div class="skill-category">
+                                <h6 class="skill-category-title">Data Science</h6>
+                                <p>EDA, Modeling, Hypothesis Testing, Causal Inference (CDGs), Regression, Time Series</p>
+                            </div>
+                            <div class="skill-category">
+                                <h6 class="skill-category-title">Big Data & Visualization</h6>
+                                <p>SQL, Spark, Hadoop, Dask, Tableau</p>
+                            </div>
+                            <div class="skill-category">
+                                <h6 class="skill-category-title">Cloud & DevOps</h6>
+                                <p>AWS (SageMaker, EC2, S3), Azure, Docker</p>
+                            </div>
+                            <div class="skill-category">
+                                <h6 class="skill-category-title">Quantitative Tools</h6>
+                                <p>Bloomberg, Alpaca, PyAlgoTrade</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="resume-section mb-5">
+                        <h3 class="section-title">Certifications</h3>
+                        <div class="certifications-list">
+                            <div class="cert-item">
+                                <h6>Bloomberg Certificate 2024</h6>
+                                <p class="small">The Purpose of Investing, Types of Investment, Risk and Reward, Portfolio Management</p>
+                            </div>
+                            <div class="cert-item">
+                                <h6>NSE Academy's Certified Investment Analysis Pro 2021</h6>
+                                <p class="small">Technical Analysis, Fundamental Analysis, and Investment Analysis & Portfolio Management</p>
+                            </div>
+                            <div class="cert-item">
+                                <h6>Data Science & Machine Learning Coursework</h6>
+                                <p class="small">Andrew Ng, IBM etc. (2021)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>&copy; 2025 Ansh Riyal. All rights reserved.</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <div class="social-links">
+                        <a href="https://github.com/ANSH-RIYAL" target="_blank" class="text-white me-3">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ansh-riyal-8225061a3/" target="_blank" class="text-white me-3">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ansh.riyal@nyu.edu" class="text-white">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadResumeContent();
+            setupResumeActions();
+        });
+
+        async function loadResumeContent() {
+            try {
+                // Load experience data
+                const expResponse = await fetch('data/experience.json');
+                const expData = await expResponse.json();
+                displayExperience(expData.experience);
+
+                // Load education data
+                const eduResponse = await fetch('data/education.json');
+                const eduData = await eduResponse.json();
+                displayEducation(eduData.education);
+
+            } catch (error) {
+                console.error('Error loading resume content:', error);
+            }
+        }
+
+        function displayExperience(experiences) {
+            const container = document.getElementById('experience-content');
+            container.innerHTML = '';
+
+            experiences.forEach(exp => {
+                const expItem = document.createElement('div');
+                expItem.className = 'experience-item mb-4';
+
+                const achievements = exp.achievements.slice(0, 3).map(achievement => 
+                    `<li>${achievement}</li>`
+                ).join('');
+
+                expItem.innerHTML = `
+                    <div class="exp-header">
+                        <h5 class="exp-title">${exp.title}</h5>
+                        <div class="exp-meta">
+                            <span class="exp-company">${exp.company}</span> | 
+                            <span class="exp-location">${exp.location}</span> | 
+                            <span class="exp-duration">${exp.duration}</span>
+                        </div>
+                    </div>
+                    <div class="exp-content">
+                        <p class="exp-description">${exp.description}</p>
+                        <ul class="exp-achievements">
+                            ${achievements}
+                        </ul>
+                    </div>
+                `;
+
+                container.appendChild(expItem);
+            });
+        }
+
+        function displayEducation(education) {
+            const container = document.getElementById('education-content');
+            container.innerHTML = '';
+
+            education.forEach(edu => {
+                const eduItem = document.createElement('div');
+                eduItem.className = 'education-item mb-4';
+
+                const keyCourses = edu.key_courses.slice(0, 6).join(', ');
+
+                eduItem.innerHTML = `
+                    <div class="edu-header">
+                        <h5 class="edu-degree">${edu.degree}</h5>
+                        <div class="edu-meta">
+                            <span class="edu-institution">${edu.institution}</span> | 
+                            <span class="edu-location">${edu.location}</span> | 
+                            <span class="edu-duration">${edu.duration}</span>
+                        </div>
+                        <div class="edu-gpa">
+                            <strong>GPA: ${edu.gpa}</strong>
+                        </div>
+                    </div>
+                    <div class="edu-content">
+                        <p class="edu-description">${edu.description}</p>
+                        <div class="edu-courses">
+                            <h6>Key Courses:</h6>
+                            <p>${keyCourses}</p>
+                        </div>
+                    </div>
+                `;
+
+                container.appendChild(eduItem);
+            });
+        }
+
+        function setupResumeActions() {
+            // Print functionality
+            document.getElementById('print-resume').addEventListener('click', function(e) {
+                e.preventDefault();
+                window.print();
+            });
+
+            // Download PDF functionality (placeholder)
+            document.getElementById('download-resume').addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('PDF download functionality would be implemented here. This would generate a PDF version of the resume.');
+            });
+        }
+    </script>
+
+    <style>
+        @media print {
+            .navbar, .resume-actions, footer {
+                display: none !important;
+            }
+            
+            .py-5 {
+                padding: 2rem 0 !important;
+            }
+            
+            .container {
+                max-width: none !important;
+            }
+            
+            .resume-section {
+                break-inside: avoid;
+                margin-bottom: 2rem !important;
+            }
+            
+            .section-title {
+                color: #000 !important;
+                border-bottom: 2px solid #000;
+                padding-bottom: 0.5rem;
+            }
+        }
+
+        .resume-section {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        .resume-section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .summary-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text-color);
+        }
+
+        .experience-item, .education-item {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .exp-title, .edu-degree {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .exp-meta, .edu-meta {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .exp-company, .edu-institution {
+            font-weight: 500;
+        }
+
+        .exp-achievements {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        .exp-achievements li {
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .skill-category {
+            background: var(--light-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .skill-category-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-category p {
+            font-size: 0.9rem;
+            color: var(--text-color);
+            margin-bottom: 0;
+        }
+
+        .certifications-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .cert-item {
+            background: var(--light-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .cert-item h6 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .cert-item p {
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+
+        .publication-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .publication-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-color);
+        }
+
+        .publication-list li:last-child {
+            border-bottom: none;
+        }
+
+        .resume-actions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-info p {
+            opacity: 0.9;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .edu-gpa {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .edu-courses {
+            margin-top: 1rem;
+        }
+
+        .edu-courses h6 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .edu-courses p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+    </style>
+</body>
 </html>

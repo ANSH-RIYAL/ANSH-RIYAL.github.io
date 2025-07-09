@@ -1,123 +1,298 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ansh Riyal</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="certifications.html">Certifications</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
-        <header>
-            <div class="profile-picture">
-                <img src="./images/profile_picture.jpg" alt="Profile Picture" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Riyal - AI Engineer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-brain me-2"></i>Ansh Riyal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                </ul>
             </div>
-            <div class="header-content">
-                <h1>Ansh Riyal</h1>
-                <p>
-                    Manhattan, NY | +1 (347) 207 1322 |
-                    ansh.riyal@nyu.edu
-                </p>
-                <p>
-                    <a href="https://github.com/ANSH-RIYAl" target="_blank"
-                        >GitHub</a
-                    >
-                    |
-                    <a
-                        href="https://www.linkedin.com/in/ansh-riyal-8225061a3/"
-                        target="_blank"
-                        >LinkedIn</a
-                    >
-                </p>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="text-primary">Ansh Riyal</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Machine Learning Engineer | LLM Systems | Real-Time Agentic AI
+                        </p>
+                        <p class="hero-description">
+                            AI/ML Engineer with experience deploying models in financial and compliance domains, 
+                            specializing in structured and unstructured data processing, LLM applications for 
+                            document intelligence, and scalable ML systems.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="projects.html" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-code me-2"></i>View Projects
+                            </a>
+                            <a href="resume.html" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-file-text me-2"></i>Resume
+                            </a>
+                        </div>
+                        <div class="hero-stats mt-4">
+                            <div class="row">
+                                <div class="col-4 text-center">
+                                    <h3 class="text-primary">50+</h3>
+                                    <p class="small">Projects</p>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h3 class="text-primary">3+</h3>
+                                    <p class="small">Years Experience</p>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h3 class="text-primary">4</h3>
+                                    <p class="small">Publications</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <div class="tech-stack">
+                            <div class="tech-item">
+                                <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                                <h5>LLM Systems</h5>
+                                <p>Production-scale language models</p>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-robot fa-3x text-primary mb-3"></i>
+                                <h5>AI Agents</h5>
+                                <p>Real-time agentic AI systems</p>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-cloud fa-3x text-primary mb-3"></i>
+                                <h5>Cloud ML</h5>
+                                <p>Scalable deployment & optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </header>
+        </div>
+    </section>
 
-        <main>
-            <section
-                class="section-box"
-                onclick="window.location.href='education.html'"
-            >
-                <h2>Education</h2>
-                <p>
-                    New York University (Sept. 2022 - Present) - Masters in Data
-                    Science - GPA: 3.77/4.0
-                </p>
-                <p>
-                    University of Delhi (Sept. 2018 - June 2022) - Bachelor of
-                    Engineering, Computer Engineering - GPA: 8.33/10 or 4.0/4.0
-                </p>
-            </section>
-            <section
-                class="section-box"
-                onclick="window.location.href='projects.html'"
-            >
-                <h2>Projects</h2>
-                <p>SkipCode - Automated code generation platform</p>
-                <p>Reinforcement Learning Server Game</p>
-                <p>Recommender System</p>
-                <p>Predicting Probability of Default</p>
-                <p>Data Analysis on movie ratings</p>
-                <p>Studying the impact of Multi-modal input</p>
-            </section>
-            <section
-                class="section-box"
-                onclick="window.location.href='skills.html'"
-            >
-                <h2>Key Skills</h2>
-                <p>Programming</p>
-                <p>Machine Learning</p>
-                <p>Database management</p>
-                <p>Data Science</p>
-                <p>Natural Language Processing</p>
-            </section>
-            <section
-                class="section-box"
-                onclick="window.location.href='certifications.html'"
-            >
-                <h2>Certifications</h2>
-                <p>Generative AI with LLMs</p>
-                <p>IBM Data Science Professional Certificate</p>
-                <p>Generative AI Short Courses</p>
-                <p>NSE Academy's Certified Investment Analysis Pro</p>
-            </section>
-            <section
-                class="section-box"
-                onclick="window.location.href='experience.html'"
-            >
-                <h2>Experience</h2>
-                <p>Machine Learning Engineer (Team Lead), METY Technology (Remote), Sept 2023 - Present</p>
-                <p>Teaching Staff + Grader, New York University, Sept 2023 - Present</p>
-                <p>Capstone: Multi-Modal M&A Agreement Extraction, NYU, Sept 2023 - Dec 2023</p>
-                <p>Research: Bank Loan Default Modeling, NYU, Sept 2022 - Dec 2022</p>
-                <p>Automated ML Code Generation Platform, Independent Research, Jan 2021 - Dec 2021</p>
-                <p>Software Intern, Roinet Solutions Pvt. Limited, June 2021 - Aug 2021</p>
-            </section>
-            <section
-                class="section-box"
-                onclick="window.location.href='publications.html'"
-            >
-                <h2>Publications</h2>
-                <p>Blockchain Tree ...</p>
-                <p>Pairing Based Cryptography ...</p>
-                <p>Internet of Things and Blockchain ...</p>
-                <p>Fog Data Analytics ...</p>
-            </section>
-        </main>
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">AI Engineer with a passion for building intelligent systems</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="about-content">
+                        <p class="lead">
+                            I am a Machine Learning Engineer and Team Lead at METY Technology, specializing in 
+                            LLM systems, real-time agentic AI, and production-scale ML deployment. With a 
+                            Master's in Data Science from NYU and hands-on experience in financial and healthcare 
+                            domains, I focus on building scalable, intelligent systems that solve real-world problems.
+                        </p>
+                        <p>
+                            My expertise spans across the full ML lifecycle - from research and experimentation 
+                            to production deployment and optimization. I have successfully led cross-functional 
+                            teams, delivered strategic technical solutions, and built systems that serve thousands of users.
+                        </p>
+                        <div class="about-highlights mt-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-graduation-cap text-primary me-2"></i>Education</h5>
+                                    <p>M.S. Data Science, New York University<br>
+                                    B.E. Computer Engineering, University of Delhi</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-briefcase text-primary me-2"></i>Current Role</h5>
+                                    <p>Machine Learning Engineer (Team Lead)<br>
+                                    METY Technology, NYC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <footer class="footer">
-            <p><a href="index.html">Back to Home</a></p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+    <!-- Quick Links Section -->
+    <section id="quicklinks" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Explore My Work</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="quick-link-card">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Projects</h4>
+                        <p>Explore my latest work in AI, ML, and software development</p>
+                        <a href="projects.html" class="btn btn-primary">View Projects</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="quick-link-card">
+                        <div class="card-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h4>Experience</h4>
+                        <p>Learn about my professional journey and achievements</p>
+                        <a href="experience.html" class="btn btn-primary">View Experience</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="quick-link-card">
+                        <div class="card-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Skills</h4>
+                        <p>Discover my technical expertise and competencies</p>
+                        <a href="skills.html" class="btn btn-primary">View Skills</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Recent work in AI and Machine Learning</p>
+                </div>
+            </div>
+            <div class="row" id="featured-projects">
+                <!-- Projects will be loaded dynamically -->
+            </div>
+            <div class="text-center mt-4">
+                <a href="projects.html" class="btn btn-primary btn-lg">
+                    View All Projects <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's discuss your AI and ML needs</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope text-primary"></i>
+                                    <h5>Email</h5>
+                                    <p>ansh.riyal@nyu.edu</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="contact-item">
+                                    <i class="fas fa-phone text-primary"></i>
+                                    <h5>Phone</h5>
+                                    <p>+1 (347) 207-1322</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                    <h5>Location</h5>
+                                    <p>Manhattan, New York, USA</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="contact-item">
+                                    <i class="fab fa-linkedin text-primary"></i>
+                                    <h5>LinkedIn</h5>
+                                    <p><a href="https://www.linkedin.com/in/ansh-riyal-8225061a3/" target="_blank">Connect with me</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>&copy; 2025 Ansh Riyal. All rights reserved.</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <div class="social-links">
+                        <a href="https://github.com/ANSH-RIYAL" target="_blank" class="text-white me-3">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ansh-riyal-8225061a3/" target="_blank" class="text-white me-3">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ansh.riyal@nyu.edu" class="text-white">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>

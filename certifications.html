@@ -1,106 +1,532 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ansh Riyal - Certifications</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="certifications.html">Certifications</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
-        <header>
-            <h1>Certifications</h1>
-        </header>
-        <main class="main-container">
-            <section class="section-container">
-                <div class="subsection">
-                    <a
-                        href="https://www.coursera.org/learn/generative-ai-with-llms"
-                    >
-                        <div class="sub-container">
-                            <h2>Generative AI with LLMs - 2023</h2>
-                            <p>
-                                Issued by Coursera, includes topics like
-                                Parameter Efficient Fine Tuning(LoRA),
-                                Instruction Fine Tuning, etc.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications - Ansh Riyal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-brain me-2"></i>Ansh Riyal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="certifications.html">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="py-5 text-white" style="margin-top: 76px; background: linear-gradient(135deg, var(--primary-black) 0%, var(--secondary-gray) 100%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="display-4 fw-bold mb-4">
+                        <i class="fas fa-certificate me-3"></i>Certifications
+                    </h1>
+                    <p class="lead">
+                        Professional certifications and credentials in AI, ML, and Finance
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Summary -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row" id="certification-summary">
+                <!-- Summary will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="filter-buttons" id="cert-filter-buttons">
+                        <button class="filter-btn active" data-category="all">
+                            <i class="fas fa-globe me-2"></i>All Certifications
+                        </button>
+                        <button class="filter-btn" data-category="AI/ML">
+                            <i class="fas fa-brain me-2"></i>AI/ML
+                        </button>
+                        <button class="filter-btn" data-category="Finance">
+                            <i class="fas fa-chart-line me-2"></i>Finance
+                        </button>
+                        <button class="filter-btn" data-category="Data Science">
+                            <i class="fas fa-database me-2"></i>Data Science
+                        </button>
+                        <button class="filter-btn" data-category="Cloud">
+                            <i class="fas fa-cloud me-2"></i>Cloud
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row" id="certifications-container">
+                <!-- Certifications will be loaded dynamically -->
+                <div class="loading">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ongoing Certifications -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Ongoing Certifications</h2>
+                    <p class="section-subtitle">Currently pursuing professional certifications</p>
+                </div>
+            </div>
+            <div class="row" id="ongoing-certifications">
+                <!-- Ongoing certifications will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>&copy; 2025 Ansh Riyal. All rights reserved.</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <div class="social-links">
+                        <a href="https://github.com/ANSH-RIYAL" target="_blank" class="text-white me-3">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ansh-riyal-8225061a3/" target="_blank" class="text-white me-3">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ansh.riyal@nyu.edu" class="text-white">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadCertifications();
+            setupCertificationFiltering();
+        });
+
+        async function loadCertifications() {
+            try {
+                const response = await fetch('data/certifications.json');
+                const data = await response.json();
+                
+                displayCertificationSummary(data.certification_summary);
+                displayCertifications(data.certifications);
+                displayOngoingCertifications(data.ongoing_certifications);
+            } catch (error) {
+                console.error('Error loading certifications:', error);
+                document.getElementById('certifications-container').innerHTML = 
+                    '<div class="col-12 text-center"><p class="text-muted">Error loading certifications data</p></div>';
+            }
+        }
+
+        function displayCertificationSummary(summary) {
+            const container = document.getElementById('certification-summary');
+            container.innerHTML = `
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>${summary.total_certifications}</h4>
+                        <p>Total Certifications</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h4>${summary.active_certifications}</h4>
+                        <p>Active Certifications</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>${summary.total_hours}</h4>
+                        <p>Total Hours</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h4>${Object.keys(summary.categories).length}</h4>
+                        <p>Categories</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function displayCertifications(certifications) {
+            const container = document.getElementById('certifications-container');
+            container.innerHTML = '';
+
+            certifications.forEach(cert => {
+                const certCard = createCertificationCard(cert);
+                container.appendChild(certCard);
+            });
+        }
+
+        function createCertificationCard(cert) {
+            const card = document.createElement('div');
+            card.className = 'col-lg-4 col-md-6 mb-4';
+            card.dataset.category = cert.category;
+
+            const skillsList = cert.skills_covered.map(skill => 
+                `<li>${skill}</li>`
+            ).join('');
+
+            const expiryInfo = cert.expiry_date 
+                ? `<p class="text-muted mb-2"><i class="fas fa-calendar-times me-2"></i>Expires: ${new Date(cert.expiry_date).toLocaleDateString()}</p>`
+                : '<p class="text-muted mb-2"><i class="fas fa-infinity me-2"></i>No Expiration</p>';
+
+            card.innerHTML = `
+                <div class="certification-card h-100">
+                    <div class="cert-header">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h5 class="cert-title">${cert.name}</h5>
+                        <p class="cert-issuer">${cert.issuer}</p>
+                        <div class="cert-meta">
+                            <span class="badge bg-${getCategoryColor(cert.category)}">${cert.category}</span>
+                            <span class="badge bg-info ms-2">${cert.level}</span>
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <p class="cert-description">${cert.description}</p>
+                        <div class="cert-details mb-3">
+                            <p class="text-muted mb-2">
+                                <i class="fas fa-calendar-plus me-2"></i>Issued: ${new Date(cert.issue_date).toLocaleDateString()}
+                            </p>
+                            ${expiryInfo}
+                            <p class="text-muted mb-2">
+                                <i class="fas fa-clock me-2"></i>Duration: ${cert.hours} hours
                             </p>
                         </div>
-                    </a>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <a
-                        href="https://www.coursera.org/professional-certificates/ibm-data-science"
-                    >
-                        <div class="sub-container">
-                            <h2>
-                                IBM Data Science Professional Certificate - 2021
-                            </h2>
-                            <p>
-                                Issued by Coursera for the completion of 10
-                                individual data science courses for each process
-                                of the data science development lifecycle.
-                                Courses include: Data Collection, Data Cleaning,
-                                Data Visualization, Data Analysis, etc.
-                            </p>
+                        <div class="skills-covered">
+                            <h6 class="text-primary mb-2">Skills Covered:</h6>
+                            <ul class="skills-list">
+                                ${skillsList}
+                            </ul>
                         </div>
-                    </a>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <a href="#">
-                        <div class="sub-container">
-                            <h2>Generative AI Short Courses - 2023</h2>
-                            <p>
-                                Series of courses provided by DeepLearning.ai,
-                                designed by Andrew Ng. Topics include: ChatGPT
-                                prompting and building systems, LangChain, LLMs
-                                and Semantic Search, Building Generative AI with
-                                Gradio, Diffusion models, Evaluating and
-                                Debugging generative AI, etc.
-                            </p>
+                    </div>
+                    <div class="cert-footer">
+                        <div class="cert-actions">
+                            ${cert.verification_url ? `
+                                <a href="${cert.verification_url}" target="_blank" class="btn btn-outline-primary btn-sm">
+                                    <i class="fas fa-external-link-alt me-1"></i>Verify
+                                </a>
+                            ` : ''}
+                            <span class="badge bg-success ms-2">${cert.status}</span>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <a
-                        href="https://www.nseindia.com/learn/proficiency-certificate"
-                    >
-                        <div class="sub-container">
-                            <h2>
-                                NSE Academy’s Certified Investment Analysis Pro
-                                - 2021
-                            </h2>
-                            <p>
-                                Issued by the National Stock Exchange of India.
-                                Combinatorial certificate issued after the
-                                completion of 3 individual courses: Technical
-                                Analysis, Fundamental Analysis and Investment
-                                Analysis & Portfolio Management.
-                            </p>
+            `;
+
+            return card;
+        }
+
+        function displayOngoingCertifications(ongoingCerts) {
+            const container = document.getElementById('ongoing-certifications');
+            container.innerHTML = '';
+
+            ongoingCerts.forEach(cert => {
+                const certCard = createOngoingCertCard(cert);
+                container.appendChild(certCard);
+            });
+        }
+
+        function createOngoingCertCard(cert) {
+            const card = document.createElement('div');
+            card.className = 'col-lg-6 col-md-12 mb-4';
+
+            card.innerHTML = `
+                <div class="ongoing-cert-card">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h5 class="cert-title">${cert.name}</h5>
+                            <p class="cert-issuer">${cert.issuer}</p>
+                            <p class="cert-description">${cert.description}</p>
+                            <div class="cert-meta">
+                                <span class="badge bg-${getCategoryColor(cert.category)}">${cert.category}</span>
+                                <small class="text-muted ms-2">Expected: ${cert.expected_completion}</small>
+                            </div>
                         </div>
-                    </a>
+                        <div class="col-md-4 text-center">
+                            <div class="progress-circle">
+                                <div class="progress-value">${cert.progress}%</div>
+                                <svg class="progress-ring" width="80" height="80">
+                                    <circle class="progress-ring-circle" cx="40" cy="40" r="35" 
+                                            stroke-dasharray="219.8" stroke-dashoffset="${219.8 - (219.8 * cert.progress / 100)}">
+                                    </circle>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <p><a href="index.html">Home</a></p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+            `;
+
+            return card;
+        }
+
+        function getCategoryColor(category) {
+            const colors = {
+                'AI/ML': 'primary',
+                'Finance': 'success',
+                'Data Science': 'info',
+                'Cloud': 'warning',
+                'DevOps': 'secondary'
+            };
+            return colors[category] || 'secondary';
+        }
+
+        function setupCertificationFiltering() {
+            document.querySelectorAll('.filter-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.dataset.category;
+                    
+                    // Update active button
+                    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Filter certifications
+                    const certCards = document.querySelectorAll('#certifications-container > div');
+                    certCards.forEach(card => {
+                        if (category === 'all' || card.dataset.category === category) {
+                            card.style.display = 'block';
+                            card.style.animation = 'fadeInUp 0.5s ease-out';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        }
+    </script>
+
+    <style>
+        .summary-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .summary-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .summary-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .summary-icon i {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .summary-card h4 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .certification-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .certification-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cert-header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+        }
+
+        .cert-badge {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cert-badge i {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .cert-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .cert-issuer {
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+
+        .cert-body {
+            padding: 25px;
+        }
+
+        .cert-description {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+
+        .skills-list li {
+            padding: 3px 0;
+            font-size: 0.85rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .skills-list li:last-child {
+            border-bottom: none;
+        }
+
+        .cert-footer {
+            padding: 20px 25px;
+            border-top: 1px solid var(--border-color);
+            background: var(--light-bg);
+        }
+
+        .cert-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ongoing-cert-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        .progress-circle {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+        }
+
+        .progress-value {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .progress-ring {
+            transform: rotate(-90deg);
+        }
+
+        .progress-ring-circle {
+            fill: none;
+            stroke: var(--secondary-color);
+            stroke-width: 3;
+            stroke-linecap: round;
+            transition: stroke-dashoffset 0.5s ease;
+        }
+    </style>
+</body>
 </html>

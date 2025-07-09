@@ -1,0 +1,341 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "FastMCP & FastMCP-Tool-Generator",
+      "subtitle": "Advanced MCP Implementation with Automatic Tool Generation",
+      "description": "MCP implementation with client having automatic tool generation capabilities and an orchestration layer for improving chain of thought reasoning for MCP architecture. Features advanced prompt engineering and real-time tool synthesis.",
+      "technologies": ["Python", "MCP", "LLM", "Anthropic", "OpenAI", "RAG"],
+      "category": "llm",
+      "featured": true,
+      "github": "https://github.com/ANSH-RIYAL/FastMCP",
+      "demo": null,
+      "status": "active",
+      "year": 2025,
+      "highlights": [
+        "Automatic tool generation from natural language descriptions",
+        "Advanced chain of thought reasoning implementation",
+        "Real-time MCP protocol optimization",
+        "Scalable orchestration layer for complex AI workflows"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "MCP-RAG",
+      "subtitle": "Custom LLM Backend with Agentic AI Capabilities",
+      "description": "Custom LLM backend client using Anthropic's MCP for designing Agentic AI system with RAG capabilities. Implements sophisticated document intelligence and real-time information retrieval.",
+      "technologies": ["Python", "Anthropic", "MCP", "RAG", "Vector DB", "LangChain"],
+      "category": "llm",
+      "featured": true,
+      "github": "https://github.com/ANSH-RIYAL/MCP-RAG",
+      "demo": null,
+      "status": "active",
+      "year": 2025,
+      "highlights": [
+        "Agentic AI system with autonomous decision-making",
+        "Advanced RAG implementation with vector search",
+        "Real-time document intelligence processing",
+        "Scalable backend architecture for enterprise use"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Law Interpreter",
+      "subtitle": "AI-Powered Legal Document Analysis System",
+      "description": "Advanced AI system for legal document interpretation, contract analysis, and compliance checking. Utilizes multi-modal input processing and transformer architectures for accurate legal text understanding.",
+      "technologies": ["Python", "Transformers", "BERT", "NLP", "Legal AI", "Flask"],
+      "category": "nlp",
+      "featured": true,
+      "github": "https://github.com/ANSH-RIYAL/law-interpreter",
+      "demo": null,
+      "status": "active",
+      "year": 2025,
+      "highlights": [
+        "Multi-modal legal document processing",
+        "Advanced contract analysis and risk assessment",
+        "Compliance checking with regulatory frameworks",
+        "Transformer-based legal text understanding"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Quantum Neural Network",
+      "subtitle": "Research on Quantum Machine Learning",
+      "description": "Experiments and research regarding implementation of Quantum Neural Networks and Hybrid implementations. Explores the intersection of quantum computing and machine learning for next-generation AI systems.",
+      "technologies": ["Python", "Qiskit", "Quantum Computing", "Neural Networks", "Research"],
+      "category": "research",
+      "featured": false,
+      "github": "https://github.com/ANSH-RIYAL/Quantum-Neural-Network",
+      "demo": null,
+      "status": "research",
+      "year": 2025,
+      "highlights": [
+        "Quantum neural network architectures",
+        "Hybrid quantum-classical implementations",
+        "Performance analysis on quantum simulators",
+        "Research contributions to quantum ML field"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Grocer Ease Chatbot",
+      "subtitle": "Production-Ready Conversational AI System",
+      "description": "Advanced conversational AI system for grocery shopping assistance. Features natural language understanding, product recommendations, and seamless integration with e-commerce platforms.",
+      "technologies": ["Python", "NLP", "Chatbot", "API Integration", "Production"],
+      "category": "nlp",
+      "featured": false,
+      "github": "https://github.com/ANSH-RIYAL/grocer-ease-chatbot",
+      "demo": null,
+      "status": "active",
+      "year": 2025,
+      "highlights": [
+        "Production-ready conversational AI",
+        "Natural language product search",
+        "Smart shopping recommendations",
+        "E-commerce platform integration"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Local LLM API",
+      "subtitle": "Self-Hosted Large Language Model API",
+      "description": "Local implementation of large language model API for private and secure AI applications. Optimized for performance and privacy with custom inference optimization.",
+      "technologies": ["Python", "LLM", "API", "FastAPI", "Optimization"],
+      "category": "llm",
+      "featured": false,
+      "github": "https://github.com/ANSH-RIYAL/local-llm-api",
+      "demo": null,
+      "status": "active",
+      "year": 2025,
+      "highlights": [
+        "Self-hosted LLM deployment",
+        "Privacy-focused AI inference",
+        "Custom optimization for performance",
+        "Scalable API architecture"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "DeepGuard",
+      "subtitle": "AI-Powered Security System",
+      "description": "Advanced AI security system for threat detection and prevention. Implements machine learning algorithms for anomaly detection and automated response mechanisms.",
+      "technologies": ["Python", "Security", "ML", "Anomaly Detection", "Cybersecurity"],
+      "category": "security",
+      "featured": false,
+      "github": "https://github.com/ANSH-RIYAL/DeepGuard",
+      "demo": null,
+      "status": "active",
+      "year": 2025,
+      "highlights": [
+        "Real-time threat detection",
+        "ML-based anomaly detection",
+        "Automated response system",
+        "Scalable security architecture"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Large Language Models Research",
+      "subtitle": "LLM Experimentation and Prompt Engineering",
+      "description": "Experiments on popular LLM base models such as FLAN T5, Llama2 7B, etc. Includes comprehensive prompt engineering research and model fine-tuning experiments.",
+      "technologies": ["Python", "LLM", "FLAN-T5", "Llama2", "Prompt Engineering", "Fine-tuning"],
+      "category": "research",
+      "featured": false,
+      "github": "https://github.com/ANSH-RIYAL/LargeLanguageModels",
+      "demo": null,
+      "status": "research",
+      "year": 2023,
+      "highlights": [
+        "Comprehensive LLM model analysis",
+        "Advanced prompt engineering techniques",
+        "Model fine-tuning and optimization",
+        "Performance benchmarking across models"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Predicting Probability of Default",
+      "subtitle": "Financial Risk Assessment ML Model",
+      "description": "Predicting risk ratio of a company defaulting when they take a loan from a bank. Term project based on real-world data with over 1.2 million company records, achieving AUC > 0.8.",
+      "technologies": ["Python", "Machine Learning", "XGBoost", "Financial Analysis", "Risk Assessment"],
+      "category": "finance",
+      "featured": false,
+      "github": "https://github.com/ANSH-RIYAL/Predicting-Probability-of-Default",
+      "demo": null,
+      "status": "completed",
+      "year": 2024,
+      "highlights": [
+        "1.2M+ company records analysis",
+        "AUC score greater than 0.8",
+        "Advanced feature engineering",
+        "Production-ready risk assessment model"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Multi-Modal M&A Agreement Extraction",
+      "subtitle": "Advanced Document Intelligence System",
+      "description": "Utilized advanced transformer architectures and fine-tuned BERT models for M&A agreement extraction, utilizing fuzzy matching algorithms and multi-modal inputs for enhanced accuracy.",
+      "technologies": ["Python", "BERT", "Transformers", "Multi-modal", "Document AI", "Legal Tech"],
+      "category": "nlp",
+      "featured": false,
+      "github": null,
+      "demo": null,
+      "status": "completed",
+      "year": 2023,
+      "highlights": [
+        "Advanced transformer architectures",
+        "Multi-modal document processing",
+        "Fuzzy matching algorithms",
+        "Legal document intelligence"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Data Analysis on Movie Ratings",
+      "subtitle": "Comprehensive Data Science Project",
+      "description": "Data Analysis on real world data of movie ratings by 1000 users. Comprehensive statistical analysis, visualization, and machine learning modeling for recommendation systems.",
+      "technologies": ["Python", "Pandas", "Data Analysis", "Visualization", "Statistics"],
+      "category": "data-science",
+      "featured": false,
+      "github": "https://github.com/ANSH-RIYAL/Data-Analysis-on-Movie-Ratings",
+      "demo": null,
+      "status": "completed",
+      "year": 2024,
+      "highlights": [
+        "1000+ user rating analysis",
+        "Statistical modeling and visualization",
+        "Recommendation system development",
+        "Real-world data processing"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Recommendation Systems using Big Data",
+      "subtitle": "Scalable ML Recommendation Engine",
+      "description": "Implementation of scalable recommendation systems using big data technologies. Features collaborative filtering, content-based filtering, and hybrid approaches for personalized recommendations.",
+      "technologies": ["Python", "Spark", "Big Data", "Recommendation Systems", "ML"],
+      "category": "data-science",
+      "featured": false,
+      "github": "https://github.com/ANSH-RIYAL/Recommendation-Systems-using-Big-Data",
+      "demo": null,
+      "status": "completed",
+      "year": 2025,
+      "highlights": [
+        "Scalable big data processing",
+        "Multiple recommendation algorithms",
+        "Hybrid filtering approaches",
+        "Production-ready architecture"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Virtual Adaptive Learning Assistant (VALA)",
+      "subtitle": "AI-Powered Educational Platform",
+      "description": "Engineered an agentic chatbot system for student testing, assessment and learning feedback. Implemented RL-based prompt tweaking for customized learning plans based on repetitive learning and testing.",
+      "technologies": ["Python", "Reinforcement Learning", "Educational AI", "Chatbot", "Personalization"],
+      "category": "education",
+      "featured": false,
+      "github": null,
+      "demo": null,
+      "status": "completed",
+      "year": 2024,
+      "highlights": [
+        "Agentic chatbot for education",
+        "RL-based prompt optimization",
+        "Personalized learning plans",
+        "Beta tested with 50+ students"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Automated ML Code Generation Platform",
+      "subtitle": "AI-Powered Development Tool",
+      "description": "Engineered an automated deep learning model generation platform, leveraging PyTorch/TensorFlow for model architecture creation, and optimized models for performance using guided architectural visualizations.",
+      "technologies": ["Python", "PyTorch", "TensorFlow", "AutoML", "Code Generation"],
+      "category": "automation",
+      "featured": false,
+      "github": null,
+      "demo": null,
+      "status": "completed",
+      "year": 2021,
+      "highlights": [
+        "Automated ML model generation",
+        "Multi-framework support",
+        "Performance optimization",
+        "Guided architecture visualization"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Agentic Health Guidance System",
+      "subtitle": "AI-Powered Healthcare Assistant",
+      "description": "Developed and maintained agentic LLM-based systems for personalized health guidance using structured prompts and RAG pipelines. Integrated OpenAI APIs with in-house databases for comprehensive health insights.",
+      "technologies": ["Python", "LLM", "Healthcare AI", "RAG", "OpenAI API"],
+      "category": "healthcare",
+      "featured": false,
+      "github": null,
+      "demo": null,
+      "status": "active",
+      "year": 2024,
+      "highlights": [
+        "Personalized health guidance",
+        "RAG-based knowledge retrieval",
+        "OpenAI API integration",
+        "Healthcare data analysis"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Projects",
+      "icon": "fas fa-globe"
+    },
+    {
+      "id": "llm",
+      "name": "LLM & AI",
+      "icon": "fas fa-robot"
+    },
+    {
+      "id": "nlp",
+      "name": "NLP & Text",
+      "icon": "fas fa-comments"
+    },
+    {
+      "id": "finance",
+      "name": "Finance & Risk",
+      "icon": "fas fa-chart-line"
+    },
+    {
+      "id": "research",
+      "name": "Research",
+      "icon": "fas fa-microscope"
+    },
+    {
+      "id": "data-science",
+      "name": "Data Science",
+      "icon": "fas fa-database"
+    },
+    {
+      "id": "security",
+      "name": "Security",
+      "icon": "fas fa-shield-alt"
+    },
+    {
+      "id": "healthcare",
+      "name": "Healthcare",
+      "icon": "fas fa-heartbeat"
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "icon": "fas fa-graduation-cap"
+    },
+    {
+      "id": "automation",
+      "name": "Automation",
+      "icon": "fas fa-cogs"
+    }
+  ]
+}

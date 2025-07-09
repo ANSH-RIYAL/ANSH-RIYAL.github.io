@@ -1,52 +1,494 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ansh Riyal - Education</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="certifications.html">Certifications</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
-        <header>
-            <h1>Education</h1>
-        </header>
-        <main class="main-container">
-            <section class="section-container">
-                <div class="subsection">
-                    <div class="sub-container">
-                        <h2>New York University, Center for Data Science (CDS), Manhattan, NY</h2>
-                        <p>Sept. 2022 - May 2024</p>
-                        <p>Masters in Data Science, Overall GPA: 3.77/4.0</p>
-                        <p>Coursework: Optimization and Computational Linear Algebra, Applied ML in Finance, Intro to Data Science, Probability & Statistics for Data Science, Big Data, Machine Learning, Deep Learning, Natural Language Understanding</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Ansh Riyal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-brain me-2"></i>Ansh Riyal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="py-5 text-white" style="margin-top: 76px; background: linear-gradient(135deg, var(--primary-black) 0%, var(--secondary-gray) 100%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="display-4 fw-bold mb-4">
+                        <i class="fas fa-graduation-cap me-3"></i>Education
+                    </h1>
+                    <p class="lead">
+                        Academic foundation in Data Science and Computer Engineering
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Timeline -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="education-timeline" id="education-timeline">
+                        <!-- Education items will be loaded dynamically -->
+                        <div class="loading">
+                            <div class="spinner"></div>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <div class="sub-container">
-                        <h2>University of Delhi, NSIT, Delhi, India</h2>
-                        <p>Sept. 2018 - June 2022</p>
-                        <p>Bachelor of Engineering, Computer Engineering, Overall GPA: 8.33/10 or 4.0/4.0</p>
-                        <p>Coursework: Banking Methods, Machine Learning and Artificial Intelligence, NLP, Mathematical Statistics, Modeling and Simulation, Numerical Methods, etc.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Projects -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Academic Projects</h2>
+                    <p class="section-subtitle">Key research and development projects during academic tenure</p>
+                </div>
+            </div>
+            <div class="row" id="academic-projects">
+                <!-- Academic projects will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Experience -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Teaching Experience</h2>
+                    <p class="section-subtitle">Academic instruction and mentorship roles</p>
+                </div>
+            </div>
+            <div class="row" id="teaching-experience">
+                <!-- Teaching experience will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Interests -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Research Interests</h2>
+                    <p class="section-subtitle">Areas of academic and professional research focus</p>
+                </div>
+            </div>
+            <div class="row" id="research-interests">
+                <!-- Research interests will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>&copy; 2025 Ansh Riyal. All rights reserved.</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <div class="social-links">
+                        <a href="https://github.com/ANSH-RIYAL" target="_blank" class="text-white me-3">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ansh-riyal-8225061a3/" target="_blank" class="text-white me-3">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ansh.riyal@nyu.edu" class="text-white">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <a href="index.html">Home</a>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadEducation();
+        });
+
+        async function loadEducation() {
+            try {
+                const response = await fetch('data/education.json');
+                const data = await response.json();
+                
+                displayEducation(data.education);
+                displayAcademicProjects(data.academic_projects);
+                displayTeachingExperience(data.teaching_experience);
+                displayResearchInterests(data.research_interests);
+            } catch (error) {
+                console.error('Error loading education:', error);
+                document.getElementById('education-timeline').innerHTML = 
+                    '<div class="text-center"><p class="text-muted">Error loading education data</p></div>';
+            }
+        }
+
+        function displayEducation(education) {
+            const timeline = document.getElementById('education-timeline');
+            timeline.innerHTML = '';
+
+            education.forEach((edu, index) => {
+                const eduCard = createEducationCard(edu, index);
+                timeline.appendChild(eduCard);
+            });
+        }
+
+        function createEducationCard(edu, index) {
+            const card = document.createElement('div');
+            card.className = 'education-card mb-5';
+
+            const courses = edu.key_courses.map(course => `<li>${course}</li>`).join('');
+            const achievements = edu.achievements.map(achievement => `<li>${achievement}</li>`).join('');
+            const highlights = edu.highlights.map(highlight => `<li class="text-primary">${highlight}</li>`).join('');
+
+            card.innerHTML = `
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="education-info">
+                            <h3 class="text-primary mb-2">${edu.degree}</h3>
+                            <h5 class="text-secondary mb-3">${edu.institution}</h5>
+                            <p class="text-muted mb-2">
+                                <i class="fas fa-map-marker-alt me-2"></i>${edu.location}
+                            </p>
+                            <p class="text-muted mb-2">
+                                <i class="fas fa-calendar me-2"></i>${edu.duration}
+                            </p>
+                            <p class="text-muted mb-2">
+                                <i class="fas fa-star me-2"></i>GPA: ${edu.gpa}
+                            </p>
+                            <span class="badge bg-success">${edu.status}</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="education-details">
+                            <p class="mb-4">${edu.description}</p>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="text-primary mb-3">Key Courses:</h6>
+                                    <ul class="course-list">
+                                        ${courses}
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="text-primary mb-3">Achievements:</h6>
+                                    <ul class="achievement-list">
+                                        ${achievements}
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="highlights mt-3">
+                                <h6 class="text-primary mb-2">Academic Highlights:</h6>
+                                <ul class="highlight-list">
+                                    ${highlights}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            return card;
+        }
+
+        function displayAcademicProjects(projects) {
+            const container = document.getElementById('academic-projects');
+            container.innerHTML = '';
+
+            projects.forEach(project => {
+                const projectCard = createAcademicProjectCard(project);
+                container.appendChild(projectCard);
+            });
+        }
+
+        function createAcademicProjectCard(project) {
+            const card = document.createElement('div');
+            card.className = 'col-lg-4 col-md-6 mb-4';
+
+            const techTags = project.technologies.map(tech => 
+                `<span class="tech-tag">${tech}</span>`
+            ).join('');
+
+            const outcomes = project.outcomes.map(outcome => `<li>${outcome}</li>`).join('');
+
+            card.innerHTML = `
+                <div class="project-card h-100">
+                    <div class="card-header">
+                        <h5 class="mb-1">${project.title}</h5>
+                        <p class="small text-muted mb-0">${project.type} • ${project.institution}</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted mb-3">${project.description}</p>
+                        <div class="tech-stack mb-3">
+                            ${techTags}
+                        </div>
+                        <div class="project-outcomes">
+                            <h6 class="text-primary mb-2">Outcomes:</h6>
+                            <ul class="outcome-list">
+                                ${outcomes}
+                            </ul>
+                        </div>
+                        <div class="project-meta">
+                            <small class="text-muted">
+                                <i class="fas fa-calendar me-1"></i>${project.duration}
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            return card;
+        }
+
+        function displayTeachingExperience(teachingExp) {
+            const container = document.getElementById('teaching-experience');
+            container.innerHTML = '';
+
+            teachingExp.forEach(exp => {
+                const teachingCard = createTeachingCard(exp);
+                container.appendChild(teachingCard);
+            });
+        }
+
+        function createTeachingCard(exp) {
+            const card = document.createElement('div');
+            card.className = 'col-lg-4 col-md-6 mb-4';
+
+            const responsibilities = exp.responsibilities.map(resp => `<li>${resp}</li>`).join('');
+
+            card.innerHTML = `
+                <div class="teaching-card h-100">
+                    <div class="card-header">
+                        <h5 class="text-primary mb-1">${exp.role}</h5>
+                        <p class="text-secondary mb-1">${exp.course}</p>
+                        <p class="text-muted mb-0">${exp.institution}</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="teaching-stats mb-3">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="stat-item">
+                                        <h6 class="text-primary">${exp.students}</h6>
+                                        <small class="text-muted">Students</small>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="stat-item">
+                                        <h6 class="text-primary">${exp.duration}</h6>
+                                        <small class="text-muted">Duration</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="responsibilities">
+                            <h6 class="text-primary mb-2">Responsibilities:</h6>
+                            <ul class="responsibility-list">
+                                ${responsibilities}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            return card;
+        }
+
+        function displayResearchInterests(interests) {
+            const container = document.getElementById('research-interests');
+            container.innerHTML = '';
+
+            interests.forEach(interest => {
+                const interestCard = createResearchInterestCard(interest);
+                container.appendChild(interestCard);
+            });
+        }
+
+        function createResearchInterestCard(interest) {
+            const card = document.createElement('div');
+            card.className = 'col-lg-4 col-md-6 mb-4';
+
+            const icons = {
+                'Large Language Models': 'fas fa-robot',
+                'Agentic AI Systems': 'fas fa-brain',
+                'Financial Technology': 'fas fa-chart-line',
+                'Document Intelligence': 'fas fa-file-alt',
+                'Quantum Machine Learning': 'fas fa-atom',
+                'Real-time AI': 'fas fa-bolt'
+            };
+
+            const iconClass = Object.keys(icons).find(key => interest.includes(key)) || 'fas fa-microscope';
+
+            card.innerHTML = `
+                <div class="research-interest-card h-100">
+                    <div class="card-icon">
+                        <i class="${icons[Object.keys(icons).find(key => interest.includes(key))] || 'fas fa-microscope'}"></i>
+                    </div>
+                    <h6 class="text-primary">${interest}</h6>
+                </div>
+            `;
+
+            return card;
+        }
+    </script>
+
+    <style>
+        .education-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        .education-info {
+            position: relative;
+        }
+
+        .education-info::after {
+            content: '';
+            position: absolute;
+            right: -20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--secondary-color);
+        }
+
+        .course-list, .achievement-list, .highlight-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .course-list li, .achievement-list li, .highlight-list li {
+            padding: 5px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .course-list li:last-child, .achievement-list li:last-child, .highlight-list li:last-child {
+            border-bottom: none;
+        }
+
+        .teaching-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .teaching-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .teaching-card .card-header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 20px;
+        }
+
+        .teaching-card .card-body {
+            padding: 25px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .responsibility-list, .outcome-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .responsibility-list li, .outcome-list li {
+            padding: 3px 0;
+            font-size: 0.9rem;
+        }
+
+        .research-interest-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .research-interest-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .research-interest-card .card-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 15px;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .research-interest-card .card-icon i {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .education-info::after {
+                display: none;
+            }
+        }
+    </style>
+</body>
 </html>

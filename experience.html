@@ -1,118 +1,247 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ansh Riyal - Experience</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="certifications.html">Certifications</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Ansh Riyal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-brain me-2"></i>Ansh Riyal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <header>
-            <h1>Experience</h1>
-        </header>
+    <!-- Header Section -->
+    <section class="py-5 text-white" style="margin-top: 76px; background: linear-gradient(135deg, var(--primary-black) 0%, var(--secondary-gray) 100%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="display-4 fw-bold mb-4">
+                        <i class="fas fa-briefcase me-3"></i>Professional Experience
+                    </h1>
+                    <p class="lead">
+                        AI Engineering Leadership • Production ML Systems • Cross-functional Team Management
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <main class="main-container">
-            <section class="section-container">
-                <div class="subsection">
-                    <div class="sub-container">
-                        <h3>Machine Learning Engineer (Team Lead)</h3>
-                        <p class="company">METY Technology, Virginia (Remote)</p>
-                        <p class="date">Sept 2023 - Present</p>
-                        <ul>
-                            <li>Engineered and refined core ML systems for prediction modeling using TensorFlow and PyTorch for deployment.</li>
-                            <li>Managed and streamlined production environments on AWS EC2 and SageMaker, integrating S3 storage and SQL databases.</li>
-                            <li>Hosted APIs with Flask and Django, resulting in minimal downtime, high throughput, and an 80% reduction in processing time and 50% decrease in latency.</li>
-                            <li>Developed and maintained agentic LLM-based systems for personalized health guidance using structured prompts and RAG pipelines.</li>
-                            <li>Interpreted and synthesized user log data to measure compliance with user plans, biological and psychological effects of following the plan, etc. in partnership with top US and Canada Universities.</li>
-                            <li>Oversaw and coordinated three cross-functional teams on API management and product enhancements.</li>
-                        </ul>
+    <!-- Experience Timeline -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="timeline" id="experience-timeline">
+                        <!-- Timeline items will be loaded dynamically -->
+                        <div class="loading">
+                            <div class="spinner"></div>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <div class="sub-container">
-                        <h3>Teaching Staff + Grader</h3>
-                        <p class="company">New York University, New York</p>
-                        <p class="date">Sept 2023 - Present</p>
-                        <ul>
-                            <li>Developing and facilitating multiple graduate and undergraduate courses of 450+ students as a teaching assistant at NYU Center for Data Science.</li>
-                            <li>Subjects encompass: 'Introduction to Data Science', 'Big Data' and 'Principles of Data Science'.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <div class="sub-container">
-                        <h3>Impact of Multi-Modal Input for M&A Agreement Extraction (Capstone)</h3>
-                        <p class="company">NYU Capstone</p>
-                        <p class="date">Sept 2023 - Dec 2023</p>
-                        <ul>
-                            <li>Utilized advanced transformer architectures and fine-tuned BERT models for M&A agreement extraction, utilizing fuzzy matching algorithms and multi-modal inputs for enhanced accuracy.</li>
-                            <li>Constructed and automated an end-to-end data pipeline.</li>
-                            <li>Leveraged structured prompting templates to transform data from existing document structures into a standardized format that preserved legal structure information across multiple databases.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <div class="sub-container">
-                        <h3>Modeling the Probability of Bank Loan Defaults (Research)</h3>
-                        <p class="company">NYU Research</p>
-                        <p class="date">Sept 2022 - Dec 2022</p>
-                        <ul>
-                            <li>Analyzed and processed a real-world dataset containing 1.2 million company records to predict the probability of loan defaults. Achieved an AUC score greater than 0.8 along with good accuracy.</li>
-                            <li>Executed data cleaning, engineered feature extraction, selection and modification.</li>
-                            <li>Explored various modeling approaches, ranging from xgboost, gbm, etc. to Neural Networks.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <div class="sub-container">
-                        <h3>Automated Code Generation Platform for ML Applications (Independent Research)</h3>
-                        <p class="company">Independent Research</p>
-                        <p class="date">Jan 2021 - Dec 2021</p>
-                        <ul>
-                            <li>Engineered an automated deep learning model generation platform, leveraging PyTorch/TensorFlow for model architecture creation, and optimized models for performance using guided architectural visualizations.</li>
-                            <li>Preliminary EDA and suggested modeling techniques included.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="subsection">
-                    <div class="sub-container">
-                        <h3>Software Intern</h3>
-                        <p class="company">Roinet Solutions Pvt. Limited, Gurugram, India</p>
-                        <p class="date">June 2021 - Aug 2021</p>
-                        <ul>
-                            <li>Conceptualized and programmed software for novel blockchain based Internet of Things infrastructure.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
+            </div>
+        </div>
+    </section>
 
-        <footer class="footer">
-            <p><a href="index.html">Home</a></p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+    <!-- Skills Summary -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Professional Skills Summary</h2>
+                    <p class="section-subtitle">Core competencies developed through professional experience</p>
+                </div>
+            </div>
+            <div class="row" id="skills-summary">
+                <!-- Skills summary will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>&copy; 2025 Ansh Riyal. All rights reserved.</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <div class="social-links">
+                        <a href="https://github.com/ANSH-RIYAL" target="_blank" class="text-white me-3">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ansh-riyal-8225061a3/" target="_blank" class="text-white me-3">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ansh.riyal@nyu.edu" class="text-white">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadExperience();
+        });
+
+        async function loadExperience() {
+            try {
+                const response = await fetch('data/experience.json');
+                const data = await response.json();
+                
+                displayExperience(data.experience);
+                displaySkillsSummary(data.skills_summary);
+            } catch (error) {
+                console.error('Error loading experience:', error);
+                document.getElementById('experience-timeline').innerHTML = 
+                    '<div class="text-center"><p class="text-muted">Error loading experience data</p></div>';
+            }
+        }
+
+        function displayExperience(experiences) {
+            const timeline = document.getElementById('experience-timeline');
+            timeline.innerHTML = '';
+
+            experiences.forEach((experience, index) => {
+                const timelineItem = createTimelineItem(experience, index);
+                timeline.appendChild(timelineItem);
+            });
+        }
+
+        function createTimelineItem(experience, index) {
+            const item = document.createElement('div');
+            item.className = 'timeline-item';
+
+            const techTags = experience.technologies.map(tech => 
+                `<span class="tech-tag">${tech}</span>`
+            ).join('');
+
+            const achievements = experience.achievements.map(achievement => 
+                `<li>${achievement}</li>`
+            ).join('');
+
+            const highlights = experience.highlights.map(highlight => 
+                `<li class="text-primary">${highlight}</li>`
+            ).join('');
+
+            item.innerHTML = `
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div>
+                            <h4 class="text-primary mb-1">${experience.title}</h4>
+                            <h5 class="text-secondary mb-1">${experience.company}</h5>
+                            <p class="text-muted mb-0">
+                                <i class="fas fa-map-marker-alt me-2"></i>${experience.location}
+                                <i class="fas fa-briefcase ms-3 me-2"></i>${experience.type}
+                            </p>
+                        </div>
+                        <span class="badge bg-primary">${experience.duration}</span>
+                    </div>
+                    
+                    <p class="mb-3">${experience.description}</p>
+                    
+                    <div class="tech-stack mb-3">
+                        <h6 class="text-primary mb-2">Technologies:</h6>
+                        ${techTags}
+                    </div>
+                    
+                    <div class="achievements mb-3">
+                        <h6 class="text-primary mb-2">Key Achievements:</h6>
+                        <ul class="achievement-list">
+                            ${achievements}
+                        </ul>
+                    </div>
+                    
+                    <div class="highlights">
+                        <h6 class="text-primary mb-2">Impact Highlights:</h6>
+                        <ul class="highlight-list">
+                            ${highlights}
+                        </ul>
+                    </div>
+                </div>
+            `;
+
+            return item;
+        }
+
+        function displaySkillsSummary(skillsSummary) {
+            const container = document.getElementById('skills-summary');
+            container.innerHTML = '';
+
+            Object.entries(skillsSummary).forEach(([category, skills]) => {
+                const skillCard = createSkillCard(category, skills);
+                container.appendChild(skillCard);
+            });
+        }
+
+        function createSkillCard(category, skills) {
+            const card = document.createElement('div');
+            card.className = 'col-lg-6 col-md-6 mb-4';
+
+            const categoryTitle = category.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+            const skillsList = skills.map(skill => `<li>${skill}</li>`).join('');
+
+            const icons = {
+                'technical_leadership': 'fas fa-users',
+                'ai_ml_expertise': 'fas fa-brain',
+                'production_systems': 'fas fa-server',
+                'research_experience': 'fas fa-microscope'
+            };
+
+            card.innerHTML = `
+                <div class="skill-category h-100">
+                    <h4>
+                        <i class="${icons[category] || 'fas fa-cog'} me-2"></i>
+                        ${categoryTitle}
+                    </h4>
+                    <ul class="skill-list">
+                        ${skillsList}
+                    </ul>
+                </div>
+            `;
+
+            return card;
+        }
+    </script>
+</body>
 </html>
