@@ -396,6 +396,22 @@ body {
     color: var(--accent-gold) !important;
 }
 
+.btn-primary {
+    background-color: var(--accent-gold) !important;
+    border-color: var(--accent-gold) !important;
+    color: var(--primary-black) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-black) !important;
+    border-color: var(--primary-black) !important;
+    color: var(--white) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-black) !important;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-title {
